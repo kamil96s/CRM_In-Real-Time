@@ -1,8 +1,8 @@
-$(function () {
+$(document).ready(function () {
 
     LoadCRMServices()
 
-    $("#createCRMServiceModal form").on("submit", function (event) {
+    $('#createCRMServiceModal form').submit(function (event) {
         event.preventDefault();
 
         $.ajax({
@@ -10,7 +10,7 @@ $(function () {
             type: $(this).attr('method'),
             data: $(this).serialize(),
             success: function (data) {
-                toastr["success"]("Created new order")
+                toastr["success"]("Created crm service")
                 LoadCRMServices()
             },
             error: function () {

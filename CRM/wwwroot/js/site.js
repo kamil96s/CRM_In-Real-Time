@@ -21,13 +21,13 @@ const LoadCRMServices = () => {
         type: 'get',
         success: function (data) {
             if (!data.length) {
-                container.html("There are no orders for this customer")
+                container.html("There are no services for this crm")
             } else {
                 RenderCRMServices(data, container)
             }
         },
         error: function () {
-            toastr["error"]("Something went wrong");
+            toastr["error"]("Something went wrong")
         }
     })
 }

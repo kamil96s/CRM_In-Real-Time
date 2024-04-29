@@ -7,11 +7,9 @@ using CRM.Application.CRM.Queries.GetCRMByEncodedName;
 using CRM.Application.CRMService.Commands;
 using CRM.Application.CRMService.Queries.GetCRMServices;
 using CRM.Extensions;
-using CRM.Models;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace CRM.Controllers
 {
@@ -42,8 +40,8 @@ namespace CRM.Controllers
         public async Task<IActionResult> Edit(string encodedName)
         {
             var dto = await _mediator.Send(new GetCRMByEncodedNameQuery(encodedName));
-            
-            if(!dto.IsEditable)
+
+            if (!dto.IsEditable)
             {
                 return RedirectToAction("NoAccess", "Home");
             }
@@ -81,9 +79,7 @@ namespace CRM.Controllers
             }
 
             await _mediator.Send(command);
-
-            this.SetNotification("success", $"Created customer: {command.Name}");
-
+            this.SetNotification("success", $"Created crm: {command.Name}");
             return RedirectToAction(nameof(Index));
         }
 
@@ -98,7 +94,6 @@ namespace CRM.Controllers
             }
 
             await _mediator.Send(command);
-
             return Ok();
         }
 
@@ -109,6 +104,5 @@ namespace CRM.Controllers
             var data = await _mediator.Send(new GetCRMServicesQuery() { EncodedName = encodedName });
             return Ok(data);
         }
-
     }
 }

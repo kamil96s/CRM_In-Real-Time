@@ -17,3 +17,4 @@ C:\Users\gaslo\source\repos\CRM\CRM.Infrastructure\obj\Debug\net8.0\refint\CRM.I
 C:\Users\gaslo\source\repos\CRM\CRM.Infrastructure\obj\Debug\net8.0\CRM.Infrastructure.pdb
 C:\Users\gaslo\source\repos\CRM\CRM.Infrastructure\obj\Debug\net8.0\CRM.Infrastructure.genruntimeconfig.cache
 C:\Users\gaslo\source\repos\CRM\CRM.Infrastructure\obj\Debug\net8.0\ref\CRM.Infrastructure.dll
+C:\Users\gaslo\source\repos\CRM\CRM.Infrastructure\obj\Debug\net8.0\CRM.Infrastructure.sourcelink.json

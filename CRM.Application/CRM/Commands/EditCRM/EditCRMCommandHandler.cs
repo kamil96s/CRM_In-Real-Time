@@ -13,7 +13,7 @@ namespace CRM.Application.CRM.Commands.EditCRM
     {
         private readonly ICRMRepository _repository;
         private readonly IUserContext _userContext;
-        public EditCRMCommandHandler(ICRMRepository repository, IUserContext userContext) 
+        public EditCRMCommandHandler(ICRMRepository repository, IUserContext userContext)
         {
             _repository = repository;
             _userContext = userContext;

@@ -2,7 +2,7 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createCRMServiceModal">
-    Add new order
+    Add new condition
 </button>
 
 <!-- Modal -->
@@ -41,5 +41,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

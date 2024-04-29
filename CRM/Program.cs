@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using CRM.Infrastructure.Extensions;
 using CRM.Infrastructure.Seeders;
 using CRM.Application.Extensions;
+using MediatR;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,8 @@ builder.Services.AddControllersWithViews(options => options.SuppressImplicitRequ
 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
+
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
 

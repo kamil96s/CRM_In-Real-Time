@@ -13,3 +13,4 @@ C:\Users\gaslo\source\repos\CRM\CRM.Application\obj\Debug\net8.0\CRM.Application
 C:\Users\gaslo\source\repos\CRM\CRM.Application\obj\Debug\net8.0\refint\CRM.Application.dll
 C:\Users\gaslo\source\repos\CRM\CRM.Application\obj\Debug\net8.0\CRM.Application.pdb
 C:\Users\gaslo\source\repos\CRM\CRM.Application\obj\Debug\net8.0\ref\CRM.Application.dll
+C:\Users\gaslo\source\repos\CRM\CRM.Application\obj\Debug\net8.0\CRM.Application.sourcelink.json

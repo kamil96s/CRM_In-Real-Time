@@ -10,3 +10,4 @@ C:\Users\gaslo\source\repos\CRM\CRM.Domain\obj\Debug\net8.0\refint\CRM.Domain.dl
 C:\Users\gaslo\source\repos\CRM\CRM.Domain\obj\Debug\net8.0\CRM.Domain.pdb
 C:\Users\gaslo\source\repos\CRM\CRM.Domain\obj\Debug\net8.0\ref\CRM.Domain.dll
 C:\Users\gaslo\source\repos\CRM\CRM.Domain\obj\Debug\net8.0\CRM.Domain.csproj.AssemblyReference.cache
+C:\Users\gaslo\source\repos\CRM\CRM.Domain\obj\Debug\net8.0\CRM.Domain.sourcelink.json

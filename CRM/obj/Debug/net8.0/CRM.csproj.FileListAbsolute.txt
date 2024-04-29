@@ -284,3 +284,4 @@ C:\Users\gaslo\source\repos\CRM\CRM\bin\Debug\net8.0\Microsoft.Extensions.FilePr
 C:\Users\gaslo\source\repos\CRM\CRM\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\gaslo\source\repos\CRM\CRM\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\gaslo\source\repos\CRM\CRM\bin\Debug\net8.0\libman.json
+C:\Users\gaslo\source\repos\CRM\CRM\obj\Debug\net8.0\CRM.sourcelink.json
