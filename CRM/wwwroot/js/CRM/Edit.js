@@ -16,6 +16,6 @@ $(document).ready(function () {
             error: function () {
                 toastr["error"]("Something went wrong")
             }
-        })
+        });
     });
 });

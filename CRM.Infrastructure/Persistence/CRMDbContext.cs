@@ -17,7 +17,7 @@ namespace CRM.Infrastructure.Persistence
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Domain.Entities.CRM>()
-                .OwnsOne(c => c.ContactDetails);    //wskazujemy, że nasz CRM ma jedną właściwość ContactDetails, dajemy 
+                .OwnsOne(c => c.ContactDetails);    //wskazujemy, że nasz CRM ma jedną właściwość ContactDetails
 
             modelBuilder.Entity<Domain.Entities.CRM>()
                 .HasMany(c => c.Services)

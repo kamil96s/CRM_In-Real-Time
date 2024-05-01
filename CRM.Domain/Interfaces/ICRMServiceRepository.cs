@@ -10,6 +10,7 @@ namespace CRM.Domain.Interfaces
     public interface ICRMServiceRepository
     {
         Task Create(CRMService crmService);
+        Task Delete(CRMService crmService);
         Task<IEnumerable<CRMService>> GetAllByEncodedName(string encodedName);
     }
 }

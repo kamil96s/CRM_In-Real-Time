@@ -97,6 +97,20 @@ namespace CRM.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [Authorize(Roles = "Owner")]
+
+        public async Task<IActionResult> DeleteCRMService(DeleteCRMServiceCommand command)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            await _mediator.Send(command);
+            return Ok();
+        }
+
         [HttpGet]
         [Route("CRM/{encodedName}/CRMService")]
         public async Task<IActionResult> GetCRMServices(string encodedName)

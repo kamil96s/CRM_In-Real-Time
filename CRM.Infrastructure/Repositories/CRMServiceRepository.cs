@@ -24,6 +24,13 @@ namespace CRM.Infrastructure.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task Delete(CRMService crmService)
+        {
+            _dbContext.Services.Remove(crmService);
+            await _dbContext.SaveChangesAsync();
+        }
+
+
         public async Task<IEnumerable<CRMService>> GetAllByEncodedName(string encodedName)
         => await _dbContext.Services
             .Where(s => s.CRM.EncodedName == encodedName)

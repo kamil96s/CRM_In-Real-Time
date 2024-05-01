@@ -17,7 +17,7 @@ namespace CRM.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -39,6 +39,9 @@ namespace CRM.Infrastructure.Migrations
                     b.Property<string>("CreatedById")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("DeletedById")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -53,6 +56,8 @@ namespace CRM.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CreatedById");
+
+                    b.HasIndex("DeletedById");
 
                     b.ToTable("CRMs");
                 });
@@ -291,6 +296,10 @@ namespace CRM.Infrastructure.Migrations
                         .WithMany()
                         .HasForeignKey("CreatedById");
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "DeletedBy")
+                        .WithMany()
+                        .HasForeignKey("DeletedById");
+
                     b.OwnsOne("CRM.Domain.Entities.CRMContactDetails", "ContactDetails", b1 =>
                         {
                             b1.Property<int>("CRMId")
@@ -320,6 +329,8 @@ namespace CRM.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("CreatedBy");
+
+                    b.Navigation("DeletedBy");
                 });
 
             modelBuilder.Entity("CRM.Domain.Entities.CRMService", b =>

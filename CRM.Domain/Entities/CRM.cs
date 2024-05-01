@@ -23,6 +23,8 @@ namespace CRM.Domain.Entities
         public string EncodedName { get; private set; } = default!;
 
         public List<CRMService> Services { get; set; } = new();
+        public string? DeletedById { get; set; }
+        public IdentityUser? DeletedBy { get; set; }
 
         public void EncodeName() => EncodedName = Name.ToLower().Replace(" ", "-");   
     }
