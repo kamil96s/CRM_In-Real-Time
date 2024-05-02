@@ -9,37 +9,36 @@ using System.Threading.Tasks;
 
 namespace CRM.Application.CRMService.Commands
 {
-    public class DeleteCRMServiceCommandHandler : IRequestHandler<DeleteCRMServiceCommand>
+    internal class DeleteCRMServiceCommandHandler : IRequestHandler<DeleteCRMServiceCommand>
     {
-        private readonly IUserContext _userContext;
-        private readonly ICRMRepository _crmRepository;
         private readonly ICRMServiceRepository _crmServiceRepository;
+        private readonly ICRMRepository _repository;
+        private readonly IUserContext _userContext;
 
-        public DeleteCRMServiceCommandHandler(IUserContext userContext, ICRMRepository crmRepository, ICRMServiceRepository crmServiceRepository)
+        public DeleteCRMServiceCommandHandler(ICRMServiceRepository ServiceRepository, ICRMRepository repository, IUserContext userContext)
         {
+            _crmServiceRepository = ServiceRepository;
+            _repository = repository;
             _userContext = userContext;
-            _crmRepository = crmRepository;
-            _crmServiceRepository = crmServiceRepository;
         }
         public async Task<Unit> Handle(DeleteCRMServiceCommand request, CancellationToken cancellationToken)
         {
-            var crm = await _crmRepository.GetByEncodedName(request.CRMEncodedName!);
+            var crm = await _repository.GetByEncodedName(request.EncodedName!); //pobranie danego wpisu za pomocą encodedName
 
-            var user = _userContext.GetCurrentUser();
-            var isEditable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));
+            var user = _userContext.GetCurrentUser();                                                         //sprawdzenie czy użytkownik
+            var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
 
-            if (!isEditable)
+
+            if (!isDeleteable)
             {
                 return Unit.Value;
             }
 
             var crmService = new Domain.Entities.CRMService()
             {
-                Cost = request.Cost,
-                Description = request.Description,
-                CRMId = crm.Id,
-            };
 
+            };
+            // Wywołanie istniejącej metody w repozytorium do usunięcia usług
             await _crmServiceRepository.Delete(crmService);
 
             return Unit.Value;

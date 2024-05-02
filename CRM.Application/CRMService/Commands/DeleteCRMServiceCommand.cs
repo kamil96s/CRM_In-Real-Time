@@ -10,5 +10,6 @@ namespace CRM.Application.CRMService.Commands
     public class DeleteCRMServiceCommand : CRMServiceDto, IRequest
     {
         public string CRMEncodedName { get; set; } = default!;
+        public int Id { get; set; }
     }
 }

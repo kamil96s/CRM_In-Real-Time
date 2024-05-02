@@ -9,8 +9,11 @@ namespace CRM.Domain.Interfaces
 {
     public interface ICRMServiceRepository
     {
+        IEnumerable<object> Services { get; }
+
         Task Create(CRMService crmService);
-        Task Delete(CRMService crmService);
+        Task Delete(CRMService Id);
+        Task Delete(int Id);
         Task<IEnumerable<CRMService>> GetAllByEncodedName(string encodedName);
     }
 }

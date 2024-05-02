@@ -11,7 +11,7 @@ namespace CRM.Application.CRMService.Commands
     {
         public DeleteCRMServiceCommandValidator()
         {
-
+            RuleFor(s => s.CRMEncodedName).NotEmpty().NotNull();
         }
     }
 }

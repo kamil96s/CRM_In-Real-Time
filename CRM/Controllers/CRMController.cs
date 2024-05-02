@@ -97,20 +97,6 @@ namespace CRM.Controllers
             return Ok();
         }
 
-        [HttpPost]
-        [Authorize(Roles = "Owner")]
-
-        public async Task<IActionResult> DeleteCRMService(DeleteCRMServiceCommand command)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            await _mediator.Send(command);
-            return Ok();
-        }
-
         [HttpGet]
         [Route("CRM/{encodedName}/CRMService")]
         public async Task<IActionResult> GetCRMServices(string encodedName)
@@ -118,5 +104,17 @@ namespace CRM.Controllers
             var data = await _mediator.Send(new GetCRMServicesQuery() { EncodedName = encodedName });
             return Ok(data);
         }
+
+        [HttpPost]
+        [Authorize(Roles = "Owner")]
+        [Route("CRM/{encodedName}/CRMService")]
+        public async Task<IActionResult> DeleteCRMService(string encodedName, int id)
+        {
+            var command = new DeleteCRMServiceCommand { Id = id };
+            await _mediator.Send(command);
+            return Ok();
+        }
+
+
     }
 }

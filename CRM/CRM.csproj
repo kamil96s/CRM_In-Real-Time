@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\crm\DeleteService.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\crm\DeleteService.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\crm\DeleteService.js" />
     <None Include="wwwroot\js\CRM\Edit.js" />
   </ItemGroup>
 

@@ -18,18 +18,24 @@ namespace CRM.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
+        public IEnumerable<object> Services => throw new NotImplementedException();
+
         public async Task Create(CRMService crmService)
         {
             _dbContext.Services.Add(crmService);
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task Delete(CRMService crmService)
+        public async Task Delete(int Id)
         {
-            _dbContext.Services.Remove(crmService);
+            var services = _dbContext.Services.Where(s => s.Id == Id);
+            _dbContext.Services.RemoveRange(services);
             await _dbContext.SaveChangesAsync();
         }
-
+        public Task Delete(CRMService Id)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<IEnumerable<CRMService>> GetAllByEncodedName(string encodedName)
         => await _dbContext.Services

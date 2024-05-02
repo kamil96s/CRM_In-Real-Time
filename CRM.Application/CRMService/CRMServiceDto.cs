@@ -10,5 +10,7 @@ namespace CRM.Application.CRMService
     {
         public string Description { get; set; } = default!;
         public string Cost { get; set; } = default!;
+        public string? EncodedName { get; set; }
+        public bool IsEditable { get; set; }
     }
 }
