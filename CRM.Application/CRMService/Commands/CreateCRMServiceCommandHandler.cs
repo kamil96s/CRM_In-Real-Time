@@ -27,12 +27,12 @@ namespace CRM.Application.CRMService.Commands
             var crm = await _crmRepository.GetByEncodedName(request.CRMEncodedName!);
 
             var user = _userContext.GetCurrentUser();
-            var isEditable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));
+            // var isEditable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));
 
-            if (!isEditable)
-            {
-                return Unit.Value;
-            }
+            // if (!isEditable)
+            // {
+            //    return Unit.Value;
+            // }
 
             var crmService = new Domain.Entities.CRMService()
             {

@@ -10,6 +10,7 @@ using CRM.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace CRM.Controllers
 {
@@ -63,14 +64,14 @@ namespace CRM.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [Authorize(Roles = "Owner")]
+        [Authorize]//(Roles = "Owner")]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        [Authorize(Roles = "Owner")]
+        [Authorize]//(Roles = "Owner")]
         public async Task<IActionResult> Create(CreateCRMCommand command)
         {
             if (!ModelState.IsValid)
@@ -84,7 +85,7 @@ namespace CRM.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Owner")]
+        [Authorize]//(Roles = "Owner")]
         [Route("CRM/CRMService")]
         public async Task<IActionResult> CreateCRMService(CreateCRMServiceCommand command)
         {
@@ -106,9 +107,9 @@ namespace CRM.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Owner")]
+        [Authorize]//(Roles = "Owner")]
         [Route("CRM/{encodedName}/CRMService")]
-        public async Task<IActionResult> DeleteCRMService(string encodedName, int id)
+        public async Task<IActionResult> DeleteCRMService(int id)
         {
             var command = new DeleteCRMServiceCommand { Id = id };
             await _mediator.Send(command);

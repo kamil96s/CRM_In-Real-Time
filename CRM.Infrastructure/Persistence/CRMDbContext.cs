@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CRM.Infrastructure.Persistence
 {
+
     public class CRMDbContext : IdentityDbContext
     {
         public CRMDbContext(DbContextOptions<CRMDbContext> options) : base(options) 

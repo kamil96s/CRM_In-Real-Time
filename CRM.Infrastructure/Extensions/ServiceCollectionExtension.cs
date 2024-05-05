@@ -22,8 +22,8 @@ namespace CRM.Infrastructure.Extensions
                 configuration.GetConnectionString("CRM")));
 
             services.AddDefaultIdentity<IdentityUser>()
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<CRMDbContext>();
+               // .AddRoles<IdentityRole>()
+               .AddEntityFrameworkStores<CRMDbContext>();
 
             services.AddScoped<CRMSeeder>();
 

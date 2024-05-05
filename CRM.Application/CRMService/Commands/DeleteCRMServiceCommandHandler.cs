@@ -26,13 +26,13 @@ namespace CRM.Application.CRMService.Commands
             var crm = await _repository.GetByEncodedName(request.EncodedName!); //pobranie danego wpisu za pomocą encodedName
 
             var user = _userContext.GetCurrentUser();                                                         //sprawdzenie czy użytkownik
-            var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
+            // var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
 
 
-            if (!isDeleteable)
-            {
-                return Unit.Value;
-            }
+            // if (!isDeleteable)
+            // {
+            //    return Unit.Value;
+            // }
 
             var crmService = new Domain.Entities.CRMService()
             {

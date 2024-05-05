@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     LoadCRMServices()
 
-    $('#deleteCRMServiceModal form').delete(function (event) {
+    $('#deleteCRMServiceModal form').submit(function (event) {
         event.preventDefault();
 
         $.ajax({

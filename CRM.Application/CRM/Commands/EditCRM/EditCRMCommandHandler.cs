@@ -24,12 +24,12 @@ namespace CRM.Application.CRM.Commands.EditCRM
             var crm = await _repository.GetByEncodedName(request.EncodedName!);
 
             var user = _userContext.GetCurrentUser();
-            var isEditable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));
+            // var isEditable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));
 
-            if (!isEditable)
-            {
-                return Unit.Value;
-            }
+            // if (!isEditable)
+            // {
+            //     return Unit.Value;
+            // }
 
             crm.Description = request.Description;
             crm.About = request.About;

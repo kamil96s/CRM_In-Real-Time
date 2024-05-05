@@ -26,14 +26,14 @@ namespace CRM.Application.CRM.Commands.CreateCRM
         public async Task<Unit> Handle(CreateCRMCommand request, CancellationToken cancellationToken)
         {
             var currentUser = _userContext.GetCurrentUser();
-            if (currentUser == null || !currentUser.IsInRole("Owner"))
-            {
-                return Unit.Value;
-            }
+            // if (currentUser == null || !currentUser.IsInRole("Owner"))
+            // {
+            //    return Unit.Value;
+            // }
             var crm = _mapper.Map<Domain.Entities.CRM>(request);
             crm.EncodeName();
 
-            crm.CreatedById = currentUser.Id;
+            crm.CreatedById = currentUser.Id; // crm.CreatedById = currentUser.Id; _userContext.GetCurrentUser().Id;
 
             await _crmRepository.Create(crm);
 
