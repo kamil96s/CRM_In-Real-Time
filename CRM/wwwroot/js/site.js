@@ -21,7 +21,7 @@ const LoadCRMServices = () => {
         type: 'get',
         success: function (data) {
             if (!data.length) {
-                container.html("There are no services for this crm")
+                container.html("There are no conditions for this customer")
             } else {
                 RenderCRMServices(data, container)
             }

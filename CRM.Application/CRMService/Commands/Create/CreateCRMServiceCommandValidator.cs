@@ -9,7 +9,7 @@ namespace CRM.Application.CRMService.Commands
 {
     public class CreateCRMServiceCommandValidator : AbstractValidator<CreateCRMServiceCommand>
     {
-        public CreateCRMServiceCommandValidator() 
+        public CreateCRMServiceCommandValidator()
         {
             RuleFor(s => s.Cost).NotEmpty();
             RuleFor(s => s.Description).NotEmpty().NotNull();

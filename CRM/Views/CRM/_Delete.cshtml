@@ -1,0 +1,36 @@
+﻿@model CRM.Application.CRM.Commands.DeleteCRM.DeleteCRMCommand
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteCRMModal">
+    Delete this record
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteCRMModal" tabindex="-1" aria-labelledby="deleteCRMModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="DeleteCRM" asp-route-encodedName="@Model.CRMEncodedName">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="deleteCRMModalLabel">Are you sure you want to delete?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <input asp-for="CRMEncodedName" class="form-control" type="hidden" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" value="Delete" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

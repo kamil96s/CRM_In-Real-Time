@@ -1,4 +1,5 @@
-﻿using CRM.Domain.Interfaces;
+﻿using CRM.Domain.Entities;
+using CRM.Domain.Interfaces;
 using CRM.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,6 +19,8 @@ namespace CRM.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
+        public IEnumerable<object> crms => throw new NotImplementedException();
+
         public Task Commit()
         => _dbContext.SaveChangesAsync();
 
@@ -25,6 +28,17 @@ namespace CRM.Infrastructure.Repositories
         {
             _dbContext.Add(crm);
             await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task Delete(int Id)
+        {
+            var crms = _dbContext.CRMs.Where(s => s.Id == Id);
+            _dbContext.RemoveRange(crms);
+            await _dbContext.SaveChangesAsync();
+        }
+        public Task Delete(Domain.Entities.CRM Id)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<Domain.Entities.CRM>> GetAll()
@@ -35,5 +49,10 @@ namespace CRM.Infrastructure.Repositories
 
         public Task<Domain.Entities.CRM?> GetByName(string name)
             => _dbContext.CRMs.FirstOrDefaultAsync(cw => cw.Name.ToLower() == name.ToLower());
+
+        public Task Remove(IEnumerable<Domain.Entities.CRM> crms)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

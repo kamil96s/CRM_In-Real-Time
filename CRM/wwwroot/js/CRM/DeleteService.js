@@ -10,11 +10,11 @@ $(document).ready(function () {
             type: $(this).attr('method'),
             data: $(this).serialize(),
             success: function (data) {
-                toastr["success"]("Usunieto")
+                toastr["info"]("Deleted all conditions")
                 LoadCRMServices()
             },
             error: function () {
-                toastr["error"]("Cos poszlo nie tak")
+                toastr["error"]("Something went wrong")
             }
         });
     });

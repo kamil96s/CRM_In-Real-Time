@@ -25,5 +25,10 @@ namespace CRM.Infrastructure.Persistence
                 .WithOne(s => s.CRM)
                 .HasForeignKey(s => s.CRMId);
         }
+
+        internal void RemoveRange(object crms)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

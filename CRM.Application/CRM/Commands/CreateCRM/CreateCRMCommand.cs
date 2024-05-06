@@ -9,6 +9,6 @@ namespace CRM.Application.CRM.Commands.CreateCRM
 {
     public class CreateCRMCommand : CRMDto, IRequest
     {
-        
+        public string CRMEncodedName { get; set; } = default!;
     }
 }

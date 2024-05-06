@@ -10,7 +10,7 @@ $(document).ready(function () {
             type: $(this).attr('method'),
             data: $(this).serialize(),
             success: function (data) {
-                toastr["success"]("Created crm service")
+                toastr["success"]("Created new condition")
                 LoadCRMServices()
             },
             error: function () {

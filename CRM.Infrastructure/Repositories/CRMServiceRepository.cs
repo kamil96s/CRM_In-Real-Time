@@ -41,5 +41,11 @@ namespace CRM.Infrastructure.Repositories
         => await _dbContext.Services
             .Where(s => s.CRM.EncodedName == encodedName)
             .ToListAsync();
+
+        public async Task Remove(IEnumerable<CRMService> services)
+        {
+            _dbContext.Services.RemoveRange(services);
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }

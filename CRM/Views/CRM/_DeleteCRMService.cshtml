@@ -9,7 +9,7 @@
 <div class="modal fade" id="deleteCRMServiceModal" tabindex="-1" aria-labelledby="deleteCRMServiceModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form asp-action="DeleteCRMService" asp-route-id="@Model.EncodedName" method="post">
+            <form asp-action="DeleteCRMService" asp-route-encodedName="@Model.CRMEncodedName">  
 
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="deleteCRMServiceModalLabel">Are you sure you want to delete?</h1>

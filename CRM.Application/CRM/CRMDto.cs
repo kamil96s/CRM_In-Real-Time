@@ -19,5 +19,6 @@ namespace CRM.Application.CRM
 
         public string? EncodedName { get; set; }
         public bool IsEditable { get; set; }
+        public bool IsDeleteable { get; set; }
     }
 }

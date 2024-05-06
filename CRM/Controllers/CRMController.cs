@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CRM.Application.CRM;
 using CRM.Application.CRM.Commands.CreateCRM;
+using CRM.Application.CRM.Commands.DeleteCRM;
 using CRM.Application.CRM.Commands.EditCRM;
 using CRM.Application.CRM.Queries.GetAllCRMs;
 using CRM.Application.CRM.Queries.GetCRMByEncodedName;
@@ -80,7 +81,19 @@ namespace CRM.Controllers
             }
 
             await _mediator.Send(command);
-            this.SetNotification("success", $"Created crm: {command.Name}");
+            this.SetNotification("success", $"Created record: {command.Name}");
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [Authorize]//(Roles = "Owner")]
+        [Route("CRM/{encodedName}/CRM")]
+        public async Task<IActionResult> Delete(string encodedName)
+        {
+            var command = new DeleteCRMCommand { CRMEncodedName = encodedName };
+
+            await _mediator.Send(command);
+            this.SetNotification("success", $"Deleted record: {command.Name}");
             return RedirectToAction(nameof(Index));
         }
 
@@ -106,16 +119,13 @@ namespace CRM.Controllers
             return Ok(data);
         }
 
-        [HttpPost]
         [Authorize]//(Roles = "Owner")]
         [Route("CRM/{encodedName}/CRMService")]
-        public async Task<IActionResult> DeleteCRMService(int id)
+        public async Task<IActionResult> DeleteCRMService(string encodedName)
         {
-            var command = new DeleteCRMServiceCommand { Id = id };
+            var command = new DeleteCRMServiceCommand { CRMEncodedName = encodedName };
             await _mediator.Send(command);
             return Ok();
         }
-
-
     }
 }

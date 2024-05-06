@@ -15,5 +15,6 @@ namespace CRM.Domain.Interfaces
         Task Delete(CRMService Id);
         Task Delete(int Id);
         Task<IEnumerable<CRMService>> GetAllByEncodedName(string encodedName);
+        Task Remove(IEnumerable<CRMService> services); // DODANE DODATKOWO
     }
 }
