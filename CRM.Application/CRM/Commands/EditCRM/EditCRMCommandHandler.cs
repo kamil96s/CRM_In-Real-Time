@@ -31,8 +31,9 @@ namespace CRM.Application.CRM.Commands.EditCRM
             //     return Unit.Value;
             // }
 
-            crm.Description = request.Description;
+            crm.Mail = request.Mail;
             crm.About = request.About;
+            crm.LegalForm = request.LegalForm;
 
             crm.ContactDetails.City = request.City;
             crm.ContactDetails.PhoneNumber = request.PhoneNumber;

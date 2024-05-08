@@ -24,7 +24,7 @@ namespace CRM.Infrastructure.Seeders
                     var Gerpol = new Domain.Entities.CRM()
                     {
                         Name = "Gerpol",
-                        Description = "Sklep z częściami",
+                        Mail = "Sklep z częściami",
                         ContactDetails = new()
                         {
                             City = "Kraków",

@@ -11,8 +11,12 @@ namespace CRM.Application.CRMService.Commands
     {
         public CreateCRMServiceCommandValidator()
         {
-            RuleFor(s => s.Cost).NotEmpty();
-            RuleFor(s => s.Description).NotEmpty().NotNull();
+            RuleFor(s => s.Cost).NotEmpty()
+                .NotEmpty().WithMessage("This field 'Department' cannot be empty");
+
+            RuleFor(s => s.Description).NotEmpty().NotNull()
+                .NotEmpty().WithMessage("This field 'Phone' cannot be empty");
+
             RuleFor(s => s.CRMEncodedName).NotEmpty().NotNull();
         }
     }

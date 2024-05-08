@@ -28,42 +28,6 @@ namespace CRM.Controllers
             return View();
         }
 
-        public IActionResult Accounts()
-        {
-            var model = new Accounts()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
-        }
-
-        public IActionResult Orders()
-        {
-            var model = new Orders()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
-        }
-
-        public IActionResult Reports()
-        {
-            var model = new Reports()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
-        }
-
         public IActionResult Opportunities()
         {
             var model = new Opportunities()
@@ -76,41 +40,6 @@ namespace CRM.Controllers
             return View(model);
         }
 
-        public IActionResult Meetings()
-        {
-            var model = new Meetings()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
-        }
-
-        public IActionResult Invoices()
-        {
-            var model = new Invoices()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
-        }
-
-        public IActionResult Forecasts()
-        {
-            var model = new Forecasts()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

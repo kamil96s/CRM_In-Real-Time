@@ -36,25 +36,10 @@
                             <a class="nav-link text-dark @(controller == "Home" && action == "Leads" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Leads">Leads</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "Home" && action == "Accounts" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Accounts">Accounts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "Home" && action == "Orders" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Orders">Orders</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "Home" && action == "Reports" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Reports">Reports</a>
+                            <a class="nav-link text-dark @(controller == "CRM" && action == "Index" ? "active" : "")" asp-area="" asp-controller="CRM" asp-action="Index">Accounts</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @(controller == "Home" && action == "Opportunities" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Opportunities">Opportunities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "Home" && action == "Meets" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Meetings">Meetings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "Home" && action == "Invoices" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Invoices">Invoices</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "CRM" && action == "Index" ? "active" : "")" asp-area="" asp-controller="CRM" asp-action="Index">Customer List</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />

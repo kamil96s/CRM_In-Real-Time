@@ -11,11 +11,12 @@ namespace CRM.Domain.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; } = default!;
-        public string? Description { get; set; }
+        public string? Mail { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public CRMContactDetails ContactDetails { get; set; } = default!;
 
         public string? About {  get; set; }
+        public string? LegalForm { get; set; }
 
         public string? CreatedById { get; set; }
         public IdentityUser? CreatedBy {  get; set; }

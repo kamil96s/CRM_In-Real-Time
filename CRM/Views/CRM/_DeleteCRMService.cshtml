@@ -1,8 +1,8 @@
 ﻿@model CRM.Application.CRMService.Commands.DeleteCRMServiceCommand
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteCRMServiceModal">
-    Delete all conditions
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#deleteCRMServiceModal">
+    Delete all records
 </button>
 
 <!-- Modal -->
@@ -12,7 +12,7 @@
             <form asp-action="DeleteCRMService" asp-route-encodedName="@Model.CRMEncodedName">  
 
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="deleteCRMServiceModalLabel">Are you sure you want to delete?</h1>
+                    <h1 class="modal-title fs-5" id="deleteCRMServiceModalLabel">Are you sure you want to delete all records?</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <input type="submit" value="Delete" class="btn btn-primary" />
+                    <input type="submit" value="Delete" class="btn btn-outline-dark" />
                 </div>
             </form>
         </div>

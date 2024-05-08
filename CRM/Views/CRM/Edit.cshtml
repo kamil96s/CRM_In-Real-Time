@@ -6,28 +6,13 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit @Model.Name</h1>
+<h3>Editing customer profile - @Model.Name</h3>
 
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group m-3">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group m-3">
-                <label asp-for="About" class="control-label"></label>
-                <input asp-for="About" class="form-control" />
-                <span asp-validation-for="About" class="text-danger"></span>
-            </div>
-            <div class="form-group m-3">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
             <div class="form-group m-3">
                 <label asp-for="Street" class="control-label"></label>
                 <input asp-for="Street" class="form-control" />
@@ -39,27 +24,48 @@
                 <span asp-validation-for="City" class="text-danger"></span>
             </div>
             <div class="form-group m-3">
-                <label asp-for="PostalCode" class="control-label"></label>
+                <label asp-for="PostalCode" class="control-label">Postal Code</label>
                 <input asp-for="PostalCode" class="form-control" />
                 <span asp-validation-for="PostalCode" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group m-3">
+                <label asp-for="PhoneNumber" class="control-label">Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group m-3">
+                <label asp-for="Mail" class="control-label">E-mail</label>
+                <input asp-for="Mail" class="form-control" />
+                <span asp-validation-for="Mail" class="text-danger"></span>
+            </div>
+            <div class="form-group m-3">
+                <label asp-for="About" class="control-label">TIN</label>
+                <input asp-for="About" class="form-control" />
+                <span asp-validation-for="About" class="text-danger"></span>
+            </div>
+            <div class="form-group m-3">
+                <label asp-for="LegalForm" class="control-label">Legal Form</label>
+                <input asp-for="LegalForm" class="form-control" />
+                <span asp-validation-for="LegalForm" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <input type="submit" value="Save" class="btn btn-primary" style="margin-top: 30px;" />
                 <partial name="_Delete" model="new DeleteCRMCommand() { CRMEncodedName = Model.EncodedName }" />
+                <a asp-action="Index" class="btn btn-secondary" style="margin-top: 30px;">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-<div class="m-3">
-    <partial name="_CreateCRMService" model="new CreateCRMServiceCommand() { CRMEncodedName = Model.EncodedName }" />
-    <partial name="_DeleteCRMService" model="new DeleteCRMServiceCommand() { CRMEncodedName = Model.EncodedName }" />
-    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
-</div>
-
-<h3>Customer service conditions:</h3>
+<hr />
+<h3 style="margin-bottom: 20px;">Departments - Contact Phone</h3>
 
 <div id="services" class="row" data-encoded-name="@Model.EncodedName"></div>
+
+<div style="margin: 10px 0;">
+    <partial name="_CreateCRMService" model="new CreateCRMServiceCommand() { CRMEncodedName = Model.EncodedName }" />
+    <partial name="_DeleteCRMService" model="new DeleteCRMServiceCommand() { CRMEncodedName = Model.EncodedName }" /> 
+</div>
 
 @section Scripts {
     @{

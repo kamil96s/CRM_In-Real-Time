@@ -42,11 +42,14 @@ namespace CRM.Infrastructure.Migrations
                     b.Property<string>("DeletedById")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("EncodedName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LegalForm")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mail")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")

@@ -81,7 +81,7 @@ namespace CRM.Controllers
             }
 
             await _mediator.Send(command);
-            this.SetNotification("success", $"Created record: {command.Name}");
+            this.SetNotification("success", $"Created account - {command.Name}");
             return RedirectToAction(nameof(Index));
         }
 
@@ -93,7 +93,7 @@ namespace CRM.Controllers
             var command = new DeleteCRMCommand { CRMEncodedName = encodedName };
 
             await _mediator.Send(command);
-            this.SetNotification("success", $"Deleted record: {command.Name}");
+            this.SetNotification("success", $"Deleted account - {command.Name}");
             return RedirectToAction(nameof(Index));
         }
 

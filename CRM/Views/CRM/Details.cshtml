@@ -4,30 +4,11 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>@Model.Name Details</h1>
+<h3>Details about - @Model.Name</h3>
 
 <div>
-    <h4>CRMDto</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.About)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.About)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.PhoneNumber)
-        </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Street)
         </dt>
@@ -41,24 +22,50 @@
             @Html.DisplayFor(model => model.City)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.PostalCode)
+            Postal Code
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PostalCode)
         </dd>
+        <dt class="col-sm-2">
+            Phone Number
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            E-mail
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+        <dt class="col-sm-2">
+            TIN
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.About)
+        </dd>
+        <dt class="col-sm-2">
+            Legal Form
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalForm)
+        </dd>
+
     </dl>
 </div>
 
-<h3>Customer service conditions:</h3>
+<hr />
+<h3 style="margin-bottom: 20px;">Departments - Contact Phone</h3>
 
 <div id="services" class="row" data-encoded-name="@Model.EncodedName"></div>
 
 <div>
     @if (Model.IsEditable)
     {
-        <a class = "btn btn-outline-secondary" asp-controller="CRM" asp-action="Edit" asp-route-encodedName="@Model.EncodedName">Edit</a>
+        <a class="btn btn-primary" style="margin-top: 20px;" asp-controller="CRM" asp-action="Edit" asp-route-encodedName="@Model.EncodedName">Edit</a>
     }
-    <a asp-action = "Index">Back to List</a>
+    <a class="btn btn-secondary" style="margin-top: 20px;" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

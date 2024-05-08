@@ -11,8 +11,8 @@ namespace CRM.Application.CRM.Commands.EditCRM
     {
         public EditCRMCommandValidator() 
         {
-            RuleFor(c => c.Description)
-                .NotEmpty().WithMessage("Please enter description");
+            RuleFor(c => c.Mail)
+                .NotEmpty().WithMessage("Please enter e-mail address");
 
             RuleFor(c => c.PhoneNumber)
                 .MinimumLength(8)
