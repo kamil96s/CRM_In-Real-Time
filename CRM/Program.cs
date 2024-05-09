@@ -25,6 +25,7 @@ var seeder = scope.ServiceProvider.GetRequiredService<CRMSeeder>();
 
 await seeder.Seed();
 
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

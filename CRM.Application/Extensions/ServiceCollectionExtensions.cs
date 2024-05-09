@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CRM.Application.ApplicationUser;
 using CRM.Application.CRM.Commands.CreateCRM;
+using CRM.Application.Lead.Commands.Create;
 using CRM.Application.Mappings;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -21,16 +22,21 @@ namespace CRM.Application.Extensions
             services.AddScoped<IUserContext, UserContext>();
 
             services.AddMediatR(typeof(CreateCRMCommand));
+            services.AddMediatR(typeof(CreateLeadCommand));
 
             services.AddScoped(provider => new MapperConfiguration(cfg =>
             {
                 var scope = provider.CreateScope();
                 var userContext = scope.ServiceProvider.GetRequiredService<IUserContext>();
                 cfg.AddProfile(new CRMMappingProfile(userContext));
+                cfg.AddProfile(new LeadMappingProfile(userContext));
             }).CreateMapper()
             );
 
             services.AddValidatorsFromAssemblyContaining<CreateCRMCommandValidator>()
+                    .AddFluentValidationAutoValidation()
+                    .AddFluentValidationClientsideAdapters();
+            services.AddValidatorsFromAssemblyContaining<CreateLeadCommandValidator>()
                     .AddFluentValidationAutoValidation()
                     .AddFluentValidationClientsideAdapters();
         }

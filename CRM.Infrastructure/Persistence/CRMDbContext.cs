@@ -11,6 +11,7 @@ namespace CRM.Infrastructure.Persistence
         
         }
         public DbSet<CRM.Domain.Entities.CRM> CRMs { get; set; }
+        public DbSet<CRM.Domain.Entities.Lead> Leads { get; set; }
         public DbSet<CRM.Domain.Entities.CRMService> Services { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

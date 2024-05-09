@@ -32,7 +32,7 @@ namespace CRM.Infrastructure.Repositories
 
         public async Task Delete(int Id)
         {
-            var crms = _dbContext.CRMs.Where(s => s.Id == Id);
+            var leads = _dbContext.CRMs.Where(s => s.Id == Id);
             _dbContext.RemoveRange(crms);
             await _dbContext.SaveChangesAsync();
         }
@@ -50,7 +50,7 @@ namespace CRM.Infrastructure.Repositories
         public Task<Domain.Entities.CRM?> GetByName(string name)
             => _dbContext.CRMs.FirstOrDefaultAsync(cw => cw.Name.ToLower() == name.ToLower());
 
-        public Task Remove(IEnumerable<Domain.Entities.CRM> crms)
+        public Task Remove(IEnumerable<Domain.Entities.CRM> leads)
         {
             throw new NotImplementedException();
         }

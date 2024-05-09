@@ -28,6 +28,7 @@ namespace CRM.Infrastructure.Extensions
             services.AddScoped<CRMSeeder>();
 
             services.AddScoped<ICRMRepository, CRMRepository>();
+            services.AddScoped<ILeadRepository, LeadRepository>();
             services.AddScoped<ICRMServiceRepository, CRMServiceRepository>();
         }
     }

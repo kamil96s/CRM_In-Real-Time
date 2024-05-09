@@ -23,7 +23,7 @@ namespace CRM.Infrastructure.Seeders
                 {
                     var Gerpol = new Domain.Entities.CRM()
                     {
-                        Name = "Gerpol",
+                        Name = "Bosch",
                         Mail = "Sklep z częściami",
                         ContactDetails = new()
                         {
