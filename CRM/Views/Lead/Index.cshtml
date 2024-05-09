@@ -1,0 +1,30 @@
+﻿@using CRM.Application.Lead.Commands.Delete
+@model IEnumerable<CRM.Application.Lead.LeadDto>
+
+@{
+    ViewData["Title"] = "Leads";
+}
+
+<h2>Leads</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-secondary">Create new lead</a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@item.PhoneNumber</h6>
+                <p class="card-text">@item.Mail</p>
+                @if (item.IsEditable)
+                {
+                    <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
+                }
+            </div>
+        </div>
+    }
+
+</div>
