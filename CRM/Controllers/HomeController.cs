@@ -30,14 +30,7 @@ namespace CRM.Controllers
 
         public IActionResult Opportunities()
         {
-            var model = new Opportunities()
-            {
-                Title = "CRM APP",
-                Description = "Some description",
-                Tags = new List<string>() { "jeden", "dwa", "trzy" }
-            };
-
-            return View(model);
+            return View();
         }
 
 
