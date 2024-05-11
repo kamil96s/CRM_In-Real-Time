@@ -10,6 +10,7 @@ namespace CRM.Application.Lead
     public class LeadDto
     {
         public string Name { get; set; } = default!;
+        public string? Id { get; set; }
         public string? PhoneNumber { get; set; }
         [Required(ErrorMessage = "Please enter e-mail address")]
         [EmailAddress(ErrorMessage = "This e-mail address is not valid")]

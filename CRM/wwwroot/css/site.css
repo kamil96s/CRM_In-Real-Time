@@ -22,9 +22,21 @@ body {
 }
 
 .card-body {
-    min-height: 180px; /* Zapewnia wystarczaj¹c¹ przestrzeñ dla zawartoœci */
     padding: 20px; /* Zapewnia wiêcej przestrzeni wewn¹trz ka¿dej karty */
 }
+
+.action-buttons .col-md-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-buttons .col-md-4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 
 .progress-container {
     width: 100%;
@@ -62,8 +74,6 @@ body {
     font-size: 0.75rem;
     white-space: nowrap; /* Zapobiega zawijaniu tekstu etykiet */
     text-align: center; /* Wyœrodkowuje tekst wewn¹trz elementu */
-    
-    
 }
 
     .step:nth-child(1) {
@@ -72,11 +82,11 @@ body {
     }
 
     .step:nth-child(2) {
-        left: 28%;
+        left: 29%;
     }
 
     .step:nth-child(3) {
-        left: 53%;
+        left: 52%;
     }
 
     .step:nth-child(4) {

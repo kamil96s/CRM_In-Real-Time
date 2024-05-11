@@ -9,6 +9,8 @@ using CRM.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace Lead.Controllers
@@ -29,12 +31,26 @@ namespace Lead.Controllers
             return View(leads);
         }
 
-/*        [Route("Lead/{encodedName}/Details")]
-        public async Task<IActionResult> Details(string encodedName)
+        /*        [Route("Lead/{encodedName}/Details")]
+                public async Task<IActionResult> Details(string encodedName)
+                {
+                    var dto = await _mediator.Send(new GetLeadByEncodedNameQuery(encodedName));
+                    return View(dto);
+                }*/
+
+/*        [HttpPost]
+        [Route("Lead/UpdateProgress")]
+        public async Task<IActionResult> Update(int leadId, int progress)
         {
-            var dto = await _mediator.Send(new GetLeadByEncodedNameQuery(encodedName));
-            return View(dto);
+            var lead = _context.Leads.Find(leadId);
+            if (lead == null) return NotFound();
+
+            lead.Progress = progress;
+            await _context.SaveChangesAsync();
+
+            return Ok();
         }*/
+
 
         [Route("Lead/{encodedName}/Edit")]
         public async Task<IActionResult> Edit(string encodedName)

@@ -12,7 +12,8 @@
 </p>
 
 <div class="row">
-    @foreach (var item in Model)
+ @{ int i = 0;
+    foreach (var item in Model)
     {
         <div class="card m-3" style="width: 50rem;">
             <div class="card-body">
@@ -23,7 +24,7 @@
                         <h5 class="card-title">@item.Name</h5>
                     </div>
                     <div class="col-2">
-                        <h6 class="card-subtitle mt-1 text-muted">@item.PhoneNumber</h6>
+                            <h6 class="card-subtitle mt-1">@item.PhoneNumber</h6>
                     </div>
                     <div class="col-5">
                         <p class="card-text">@item.Mail</p>
@@ -31,12 +32,12 @@
                 </div>
                 <div class="progress-container">
                     <div class="progress-bar">
-                        <div class="progress"></div>
+                        <div class="progress" id="progress-@item.Id"></div>
                     </div>
-                    <span step:nth-child(1) class="step">Contact Attempt/<br>Unsuccessful</span>
-                    <span step:nth-child(2) class="step">Successful Contact Attempt/<br>No Agreement</span><!-- Contact Attempt/Unsuccessful -->
-                    <span step:nth-child(3) class="step">Establishing<br>Cooperation</span> <!-- Successful Contact Attempt/No Agreement -->
-                    <span step:nth-child(4) class="step">No Action</span><!-- Establishing Cooperation -->
+                    <span class="step">Contact Attempt/<br>Unsuccessful</span>
+                    <span class="step">Successful Contact Attempt/<br>No Agreement</span><!-- Contact Attempt/Unsuccessful -->
+                    <span class="step">Establishing<br>Cooperation</span> <!-- Successful Contact Attempt/No Agreement -->
+                    <span class="step">No Action</span><!-- Establishing Cooperation -->
                 </div>
 
 
@@ -50,14 +51,21 @@
                 <!-- Dolna część -->
                 @if (item.IsEditable)
                 {
-                    <div class="text-center mt-2">
-                        <a class="btn btn-outline-secondary" onclick="moveProgress()">Advance</a>
-                        <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
-                    </div>
+                        <div class="row action-buttons">
+                            <div class="col-md-10 text-center">
+                                <a class="btn btn-outline-secondary" onclick="removeProgress(@item.Id)">Reverse</a>
+                                <a class="btn btn-outline-secondary" onclick="moveProgress(@item.Id)">Advance</a>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
+                            </div>
+                        </div>
                 }
             </div>
         </div>
+        i++;
     }
+}
 </div>
 
 @section Scripts {
