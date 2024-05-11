@@ -14,17 +14,52 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="card m-3" style="width: 18rem;">
+        <div class="card m-3" style="width: 50rem;">
             <div class="card-body">
-                <h5 class="card-title">@item.Name</h5>
-                <h6 class="card-subtitle mb-2 text-muted">@item.PhoneNumber</h6>
-                <p class="card-text">@item.Mail</p>
+                <!-- Górna część -->
+                <div class="row">
+                    <div class="col-5">
+                        <!-- Zajmuje 4 z 12 części szerokości kontenera -->
+                        <h5 class="card-title">@item.Name</h5>
+                    </div>
+                    <div class="col-2">
+                        <h6 class="card-subtitle mt-1 text-muted">@item.PhoneNumber</h6>
+                    </div>
+                    <div class="col-5">
+                        <p class="card-text">@item.Mail</p>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span step:nth-child(1) class="step">Contact Attempt/<br>Unsuccessful</span>
+                    <span step:nth-child(2) class="step">Successful Contact Attempt/<br>No Agreement</span><!-- Contact Attempt/Unsuccessful -->
+                    <span step:nth-child(3) class="step">Establishing<br>Cooperation</span> <!-- Successful Contact Attempt/No Agreement -->
+                    <span step:nth-child(4) class="step">No Action</span><!-- Establishing Cooperation -->
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Zajmuje 4 z 12 części szerokości kontenera -->
+                        <h5 class="card-title mt-4 mb-4"> </h5>
+                    </div>
+                    <!-- Miejsce na przyszłe elementy jeśli potrzeba -->
+                </div>
+                <!-- Dolna część -->
                 @if (item.IsEditable)
                 {
-                    <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
+                    <div class="text-center mt-2">
+                        <a class="btn btn-outline-secondary" onclick="moveProgress()">Advance</a>
+                        <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
+                    </div>
                 }
             </div>
         </div>
     }
-
 </div>
+
+@section Scripts {
+    <script src="~/js/Lead/lead.js"></script>
+}

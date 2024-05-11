@@ -20,3 +20,66 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.card-body {
+    min-height: 180px; /* Zapewnia wystarczaj¹c¹ przestrzeñ dla zawartoœci */
+    padding: 20px; /* Zapewnia wiêcej przestrzeni wewn¹trz ka¿dej karty */
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar {
+    width: calc(100% - 60px); /* Odejmuje 15px marginesu z ka¿dej strony */
+    height: 20px;
+    margin: 0px 30px; /* 10px margines górny, 15px marginesy boczne */
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: -10px; /* Opcjonalnie, w zale¿noœci od potrzeb wygl¹du */
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #4169e1;
+    transition: width 0.4s ease;
+}
+
+.step {
+    position: absolute;
+    top: 30px; /* Zwiêksza odstêp pomiêdzy suwakiem a etykietami */
+    color: #333;
+    font-size: 0.75rem;
+    white-space: nowrap; /* Zapobiega zawijaniu tekstu etykiet */
+    text-align: center; /* Wyœrodkowuje tekst wewn¹trz elementu */
+    
+    
+}
+
+    .step:nth-child(1) {
+        left: 0%;
+        
+    }
+
+    .step:nth-child(2) {
+        left: 28%;
+    }
+
+    .step:nth-child(3) {
+        left: 53%;
+    }
+
+    .step:nth-child(4) {
+        left: 88%;
+        
+    }

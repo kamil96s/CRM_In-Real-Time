@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h2aS9SQQgwvM3WBwFwQkmxhbKnfxjQYlhMiXnSzp1KY=",
+  "Hash": "gm5jBh0sDR3Yti4GbOxJ5UJ9I0qwa1qb3sF6cGSL0Jo=",
   "Source": "CRM",
   "BasePath": "_content/CRM",
   "Mode": "Default",
@@ -1003,6 +1003,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\CRM\\Edit.js"
+    },
+    {
+      "Identity": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\lead.js",
+      "SourceId": "CRM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\",
+      "BasePath": "_content/CRM",
+      "RelativePath": "js/Lead/lead.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Lead\\lead.js"
     },
     {
       "Identity": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\site.js",

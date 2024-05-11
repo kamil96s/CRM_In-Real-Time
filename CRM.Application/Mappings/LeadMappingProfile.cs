@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using CRM.Application.ApplicationUser;
+using CRM.Application.CRM;
 using CRM.Application.Lead;
+using CRM.Application.Lead.Commands.Create;
 using CRM.Application.Lead.Commands.Edit;
 using CRM.Domain.Entities;
 using System;
@@ -17,10 +19,12 @@ namespace CRM.Application.Mappings
         {
 
             var user = userContext.GetCurrentUser();
+            CreateMap<CRMDto, Domain.Entities.CRM>();
 
             CreateMap<Domain.Entities.Lead, LeadDto>()
                 .ForMember(dto => dto.IsEditable, opt => opt.MapFrom(src => user != null && (src.CreatedById == user.Id))); // (src.CreatedById == user.Id || user.IsInRole("Moderator"))))
 
+            CreateMap<CreateLeadCommand, Domain.Entities.Lead>();
             CreateMap<LeadDto, EditLeadCommand>();
         }
     }

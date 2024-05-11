@@ -32,7 +32,7 @@ namespace CRM.Application.Lead.Commands.Edit
             // }
 
             crm.Mail = request.Mail;
-            crm.Phone = request.PhoneNumber;
+            crm.PhoneNumber = request.PhoneNumber;
 
             await _repository.Commit();
             return Unit.Value;

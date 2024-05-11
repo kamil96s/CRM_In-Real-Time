@@ -197,6 +197,10 @@
       "PackagePath": "staticwebassets\\js\\CRM\\Edit.js"
     },
     {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\lead.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\lead.js"
+    },
+    {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

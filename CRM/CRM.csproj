@@ -17,6 +17,7 @@
   <ItemGroup>
     <None Include="wwwroot\js\crm\DeleteService.js" />
     <None Include="wwwroot\js\CRM\Edit.js" />
+    <None Include="wwwroot\js\Lead\lead.js" />
   </ItemGroup>
 
 	<ItemGroup>

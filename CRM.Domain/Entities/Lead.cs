@@ -11,7 +11,7 @@ namespace CRM.Domain.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; } = default!;
-        public string? Phone { get; set; }
+        public string? PhoneNumber { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public string? Mail {  get; set; }
