@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

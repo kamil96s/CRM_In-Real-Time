@@ -1,6 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Opportunities";
-}
-<h1>@ViewData["Title"]</h1>
+﻿@* @model IEnumerable<CRM.Application.Opportunities.Read.ReadOpportunitiesCommand>
 
-<p>Use this page to detail your site's xcxcxccxcxprivacy policy.</p>
+<div class="row">
+    @foreach (var opportunity in Model)
+    {
+        <div class="col-md-4">
+            <h2>@opportunity.CreatedById</h2>
+            @foreach (var name in opportunity.Name)
+            {
+                <p>@name</p>
+            }
+        </div>
+    }
+</div>
+ *@

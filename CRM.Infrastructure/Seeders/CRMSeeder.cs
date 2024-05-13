@@ -19,7 +19,7 @@ namespace CRM.Infrastructure.Seeders
         {
             if(await _dbContext.Database.CanConnectAsync())
             {
-                if (!_dbContext.CRMs.Any())
+/*                if (!_dbContext.CRMs.Any())
                 {
                     var Gerpol = new Domain.Entities.CRM()
                     {
@@ -36,7 +36,7 @@ namespace CRM.Infrastructure.Seeders
                     Gerpol.EncodeName();
                     _dbContext.CRMs.Add(Gerpol);
                     await _dbContext.SaveChangesAsync();
-                }
+                }*/
             }
         }
     }

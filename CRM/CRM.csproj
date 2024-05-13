@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\CRM\Delete.js" />
     <Content Remove="wwwroot\js\crm\DeleteService.js" />
   </ItemGroup>
 
@@ -15,9 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\CRM\Delete.js" />
     <None Include="wwwroot\js\crm\DeleteService.js" />
     <None Include="wwwroot\js\CRM\Edit.js" />
-    <None Include="wwwroot\js\Lead\lead.js" />
+    <None Include="wwwroot\js\Lead\Slider.js" />
   </ItemGroup>
 
 	<ItemGroup>

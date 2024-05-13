@@ -99,7 +99,6 @@ namespace Lead.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpPost]
         [Authorize]//(Roles = "Owner")]
         [Route("Lead/{encodedName}/Lead")]
         public async Task<IActionResult> Delete(string encodedName)
@@ -107,7 +106,7 @@ namespace Lead.Controllers
             var command = new DeleteLeadCommand { LeadEncodedName = encodedName };
 
             await _mediator.Send(command);
-            this.SetNotification("success", $"Deleted lead - {command.Name}");
+            this.SetNotification("success", $"Lead has been deleted");
             return RedirectToAction(nameof(Index));
         }
 

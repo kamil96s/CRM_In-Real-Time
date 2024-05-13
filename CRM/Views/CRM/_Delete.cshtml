@@ -1,28 +1,26 @@
-﻿@model CRM.Application.CRM.Commands.DeleteCRM.DeleteCRMCommand
+﻿@using CRM.Application.CRM.Commands.DeleteCRM
+@using CRM.Application.CRMService.Commands;
+@model CRM.Application.CRM.Commands.DeleteCRM.DeleteCRMCommand
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-dark" style="margin-top: 30px;" data-bs-toggle="modal" data-bs-target="#deleteCRMModal">
-    Delete this profile
+<button type="button" class="btn btn-outline-dark" style="margin-top: 0px;" data-bs-toggle="modal" data-bs-target="#deleteModal">
+    Delete
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="deleteCRMModal" tabindex="-1" aria-labelledby="deleteCRMModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form asp-action="DeleteCRM" asp-route-encodedName="@Model.CRMEncodedName">
-
+            <form asp-controller="CRM" asp-action="Delete" asp-route-encodedName="@Model.CRMEncodedName" method="post">
+                <input type="hidden" asp-for="CRMEncodedName" />
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="deleteCRMModalLabel">Are you sure you want to delete this profile?</h1>
 
                 </div>
-                <div class="modal-body">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                    <input asp-for="CRMEncodedName" class="form-control" type="hidden" />
-                </div>
+                
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <input type="submit" value="Delete" class="btn btn-outline-dark" />
+                    <button type="submit" class="btn btn-outline-dark">Delete</button>
                 </div>
             </form>
         </div>

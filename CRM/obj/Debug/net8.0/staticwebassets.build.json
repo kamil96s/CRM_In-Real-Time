@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gm5jBh0sDR3Yti4GbOxJ5UJ9I0qwa1qb3sF6cGSL0Jo=",
+  "Hash": "UwgX77JPkya1uOOgsYM+6rvYpqAqp8TRFe0Zix/dkTs=",
   "Source": "CRM",
   "BasePath": "_content/CRM",
   "Mode": "Default",
@@ -1005,12 +1005,12 @@
       "OriginalItemSpec": "wwwroot\\js\\CRM\\Edit.js"
     },
     {
-      "Identity": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\lead.js",
+      "Identity": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Slider.js",
       "SourceId": "CRM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\",
       "BasePath": "_content/CRM",
-      "RelativePath": "js/Lead/lead.js",
+      "RelativePath": "js/Lead/Slider.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1021,7 +1021,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Lead\\lead.js"
+      "OriginalItemSpec": "wwwroot\\js\\Lead\\Slider.js"
     },
     {
       "Identity": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\site.js",

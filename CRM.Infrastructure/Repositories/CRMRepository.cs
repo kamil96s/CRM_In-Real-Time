@@ -54,5 +54,11 @@ namespace CRM.Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public async Task Remove(Domain.Entities.CRM crm)
+        {
+            _dbContext.Remove(crm);
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }

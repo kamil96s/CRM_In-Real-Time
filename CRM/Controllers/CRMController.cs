@@ -85,7 +85,6 @@ namespace CRM.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpPost]
         [Authorize]//(Roles = "Owner")]
         [Route("CRM/{encodedName}/CRM")]
         public async Task<IActionResult> Delete(string encodedName)
@@ -93,7 +92,7 @@ namespace CRM.Controllers
             var command = new DeleteCRMCommand { CRMEncodedName = encodedName };
 
             await _mediator.Send(command);
-            this.SetNotification("success", $"Deleted account - {command.Name}");
+            this.SetNotification("info", $"Customer account deleted");
             return RedirectToAction(nameof(Index));
         }
 

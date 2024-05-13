@@ -17,6 +17,8 @@ namespace CRM.Domain.Interfaces
         Task<IEnumerable<Domain.Entities.CRM>> GetAll();
         Task<Domain.Entities.CRM> GetByEncodedName(string encodedName);
         Task Commit();
-        Task Remove(IEnumerable<Domain.Entities.CRM> crms); // DODANE DODATKOWO
+        Task Remove(IEnumerable<Domain.Entities.CRM> crm); // DODANE DODATKOWO
+        Task Remove(Entities.CRM crm);
+
     }
 }

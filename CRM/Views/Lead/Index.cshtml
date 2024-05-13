@@ -52,12 +52,14 @@
                 @if (item.IsEditable)
                 {
                         <div class="row action-buttons">
-                            <div class="col-md-10 text-center">
+                            <div class="col-md-9 text-center">
                                 <a class="btn btn-outline-secondary" onclick="removeProgress(@item.Id)">Reverse</a>
                                 <a class="btn btn-outline-secondary" onclick="moveProgress(@item.Id)">Advance</a>
                             </div>
-                            <div class="col-md-2 text-right">
+                            <div class="col-md-3 text-right">
                                 <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
+                                <!-- <a class="btn btn-outline-dark" asp-controller="Lead" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a> Nie używamy już bo mamy partial delete -->
+                                <partial name="_Delete" model="new DeleteLeadCommand() { LeadEncodedName = @item.EncodedName }" />
                             </div>
                         </div>
                 }
@@ -69,5 +71,5 @@
 </div>
 
 @section Scripts {
-    <script src="~/js/Lead/lead.js"></script>
+    <script src="~/js/Lead/Slider.js"></script>
 }

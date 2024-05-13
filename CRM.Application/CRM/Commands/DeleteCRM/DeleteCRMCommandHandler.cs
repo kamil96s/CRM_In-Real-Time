@@ -25,7 +25,7 @@ namespace CRM.Application.CRM.Commands.DeleteCRM
         {
             var crm = await _repository.GetByEncodedName(request.CRMEncodedName!); //pobranie danego wpisu za pomocą encodedName
 
-            await _repository.Remove((IEnumerable<Domain.Entities.CRM>)crm);
+            await _repository.Remove(crm);
 
             var user = _userContext.GetCurrentUser();                                                         //sprawdzenie czy użytkownik
                                                                                                           // var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
