@@ -122,7 +122,7 @@ namespace CRM.Infrastructure.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<short>("Slider")
+                    b.Property<short>("Progress")
                         .HasColumnType("smallint");
 
                     b.HasKey("Id");

@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using CRM.Domain.Entities;
+using CRM.Infrastructure.Persistence;
 
 namespace Lead.Controllers
 {
@@ -19,10 +21,12 @@ namespace Lead.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
-        public LeadController(IMediator mediator, IMapper mapper)
+        private readonly CRMDbContext _context;
+        public LeadController(IMediator mediator, IMapper mapper, CRMDbContext context)
         {
             _mediator = mediator;
             _mapper = mapper;
+            _context = context;
         }
 
         public async Task<IActionResult> Index()
@@ -31,16 +35,9 @@ namespace Lead.Controllers
             return View(leads);
         }
 
-        /*        [Route("Lead/{encodedName}/Details")]
-                public async Task<IActionResult> Details(string encodedName)
-                {
-                    var dto = await _mediator.Send(new GetLeadByEncodedNameQuery(encodedName));
-                    return View(dto);
-                }*/
-
-/*        [HttpPost]
-        [Route("Lead/UpdateProgress")]
-        public async Task<IActionResult> Update(int leadId, int progress)
+        [HttpPost]
+        [Route("Lead/{leadId}/UpdateProgress")]
+        public async Task<IActionResult> UpdateProgress(int leadId, Slider progress)
         {
             var lead = _context.Leads.Find(leadId);
             if (lead == null) return NotFound();
@@ -49,7 +46,7 @@ namespace Lead.Controllers
             await _context.SaveChangesAsync();
 
             return Ok();
-        }*/
+        }
 
 
         [Route("Lead/{encodedName}/Edit")]
@@ -109,36 +106,5 @@ namespace Lead.Controllers
             this.SetNotification("success", $"Lead has been deleted");
             return RedirectToAction(nameof(Index));
         }
-
-/*        [HttpPost]
-        [Authorize]//(Roles = "Owner")]
-        [Route("Lead/LeadService")]
-        public async Task<IActionResult> CreateLeadService(CreateLeadServiceCommand command)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            await _mediator.Send(command);
-            return Ok();
-        }
-
-        [HttpGet]
-        [Route("Lead/{encodedName}/LeadService")]
-        public async Task<IActionResult> GetLeadServices(string encodedName)
-        {
-            var data = await _mediator.Send(new GetLeadServicesQuery() { EncodedName = encodedName });
-            return Ok(data);
-        }
-
-        [Authorize]//(Roles = "Owner")]
-        [Route("Lead/{encodedName}/LeadService")]
-        public async Task<IActionResult> DeleteLeadService(string encodedName)
-        {
-            var command = new DeleteLeadServiceCommand { LeadEncodedName = encodedName };
-            await _mediator.Send(command);
-            return Ok();
-        }*/
     }
 }

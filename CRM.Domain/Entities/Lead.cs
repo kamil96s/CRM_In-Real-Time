@@ -11,7 +11,7 @@ namespace CRM.Domain.Entities
     public class Lead
     {
         public int Id { get; set; }
-        public Slider Slider { get; set; }
+        public Slider Progress { get; set; }
         public string Name { get; set; } = default!;
         public string? PhoneNumber { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
