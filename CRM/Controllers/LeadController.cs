@@ -103,7 +103,7 @@ namespace Lead.Controllers
             var command = new DeleteLeadCommand { LeadEncodedName = encodedName };
 
             await _mediator.Send(command);
-            this.SetNotification("success", $"Lead has been deleted");
+            this.SetNotification("info", $"Lead has been deleted");
             return RedirectToAction(nameof(Index));
         }
     }

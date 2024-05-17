@@ -2,23 +2,8 @@
 {
     public class Opportunity
     {
-        public int Id { get; set; }
-        public User CreatedById { get; set; }
-        public ICollection<Customer> Names { get; set; }
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+        public List<string>? Tags { get; set; } = new List<string>();
     }
-
-    public class User
-    {
-        public int Id { get; set; }
-        public string Email { get; set; }
-        // Inne właściwości
-    }
-
-    public class Customer
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        // Inne właściwości
-    }
-}
-*/
+}*/

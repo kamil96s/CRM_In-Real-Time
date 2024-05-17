@@ -28,7 +28,7 @@ namespace CRM.Controllers
             return View();
         }
 
-        public IActionResult Opportunities()
+        public IActionResult Dashboard()
         {
             return View();
         }
