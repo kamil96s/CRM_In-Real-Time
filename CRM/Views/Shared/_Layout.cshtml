@@ -40,7 +40,13 @@
                             <a class="nav-link text-dark @(controller == "CRM" && action == "Index" ? "active" : "")" asp-area="" asp-controller="CRM" asp-action="Index">Accounts</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark @(controller == "MyOpportunities" && action == "Index" ? "active" : "")" asp-area="" asp-controller="MyOpportunities" asp-action="Index">My Opportunities</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark @(controller == "MyCustomers" && action == "Index" ? "active" : "")" asp-area="" asp-controller="MyCustomers" asp-action="Index">My Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(controller == "Privacy" && action == "Index" ? "active" : "")" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -56,7 +62,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            Copyright &copy; 2024. All Rights Reserved - Customer Relationship Management for Commercial Corporations - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy policy</a>
+            Copyright &copy; 2024. All Rights Reserved - Customer Relationship Management for Commercial Corporations - <a asp-area="" asp-controller="Privacy" asp-action="Index">Privacy policy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -66,10 +66,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb0FjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gaslo/source/repos/CRM/CRM/Views/Home/Opportunities.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcHBvcnR1bml0aWVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -104,6 +100,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/MyCustomers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDdXN0b21lcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/MyOpportunities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlPcHBvcnR1bml0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/Privacy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmFjeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/Shared/Error.cshtml]
