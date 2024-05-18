@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using CRM.Application.CRM;
 using CRM.Application.CRM.Commands.CreateCRM;
 using CRM.Application.CRM.Commands.DeleteCRM;
 using CRM.Application.CRM.Commands.EditCRM;
@@ -11,7 +10,6 @@ using CRM.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace CRM.Controllers
 {

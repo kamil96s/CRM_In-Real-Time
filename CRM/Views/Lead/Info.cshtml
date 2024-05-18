@@ -1,0 +1,50 @@
+﻿@model CRM.Application.Lead.LeadDto
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h3>Info about potential customer - @Model.Name</h3>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+    </dl>
+</div>
+
+<hr />
+<h3 style="margin-bottom: 20px;">Last call was</h3>
+
+<div id="calls" class="row" data-encoded-name="@Model.EncodedName"></div>
+
+<div>
+    @if (Model.IsEditable)
+    {
+        <a class="btn btn-primary" style="margin-top: 20px;" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@Model.EncodedName">Edit</a>
+    }
+    <a class="btn btn-secondary" style="margin-top: 20px;" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script src="~/js/lead.js"></script>
+    <script src="~/js/Lead/Info.js"></script>
+    <script src="~/js/Lead/DeleteCall.js"></script>
+}

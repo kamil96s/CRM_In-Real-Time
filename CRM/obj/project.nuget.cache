@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SDaEHXTZn4hXzv7akzD65HdXXoopmgbXYogziH4oewDG04VOgvapa/6Wb9ZlIGGIbyAN831Ue5VXZwzaOfU5Ng==",
+  "dgSpecHash": "MzTE6OtSuMkrYVXHRE8g+EwbtA7onWZdSzVOkmGe7rBW0COiOZ8M19hm9hoYoRUEZsMTdpu4EHHhsyGqQOk5+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\CRM.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\gaslo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
+    "C:\\Users\\gaslo\\.nuget\\packages\\chart.js\\3.7.1\\chart.js.3.7.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",

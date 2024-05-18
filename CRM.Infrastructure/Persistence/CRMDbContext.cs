@@ -13,6 +13,7 @@ namespace CRM.Infrastructure.Persistence
         public DbSet<CRM.Domain.Entities.CRM> CRMs { get; set; }
         public DbSet<CRM.Domain.Entities.Lead> Leads { get; set; }
         public DbSet<CRM.Domain.Entities.CRMService> Services { get; set; }
+        public DbSet<CRM.Domain.Entities.LeadCall> Calls { get; set; }
         //public DbSet<CRM.Domain.Entities.Opportunities> Opportunity { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -26,6 +27,11 @@ namespace CRM.Infrastructure.Persistence
                 .HasMany(c => c.Services)
                 .WithOne(s => s.CRM)
                 .HasForeignKey(s => s.CRMId);
+
+            modelBuilder.Entity<Domain.Entities.Lead>()
+                .HasMany(c => c.Calls)
+                .WithOne(s => s.Lead)
+                .HasForeignKey(s => s.LeadId);
         }
 
         internal void RemoveRange(object crms)

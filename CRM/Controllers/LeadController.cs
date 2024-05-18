@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
-using CRM.Application.Lead;
 using CRM.Application.Lead.Commands.Create;
 using CRM.Application.Lead.Commands.Delete;
 using CRM.Application.Lead.Commands.Edit;
 using CRM.Application.Lead.Queries.GetAllLeads;
 using CRM.Application.Lead.Queries.GetLeadByEncodedName;
+using CRM.Application.LeadCall.Commands;
+using CRM.Application.LeadCall.Queries.GetLeadCalls;
 using CRM.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
 using CRM.Domain.Entities;
 using CRM.Infrastructure.Persistence;
 
@@ -33,6 +31,13 @@ namespace Lead.Controllers
         {
             var leads = await _mediator.Send(new GetAllLeadsQuery());
             return View(leads);
+        }
+
+        [Route("Lead/{encodedName}/Info")]
+        public async Task<IActionResult> Info(string encodedName)
+        {
+            var dto = await _mediator.Send(new GetLeadByEncodedNameQuery(encodedName));
+            return View(dto);
         }
 
         [HttpPost]
@@ -105,6 +110,36 @@ namespace Lead.Controllers
             await _mediator.Send(command);
             this.SetNotification("info", $"Lead has been deleted");
             return RedirectToAction(nameof(Index));
+        }
+        [HttpPost]
+        [Authorize]//(Roles = "Owner")]
+        [Route("Lead/LeadCall")]
+        public async Task<IActionResult> CreateLeadCall(CreateLeadCallCommand command)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            await _mediator.Send(command);
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("Lead/{encodedName}/LeadCall")]
+        public async Task<IActionResult> GetLeadCalls(string encodedName)
+        {
+            var data = await _mediator.Send(new GetLeadCallsQuery() { EncodedName = encodedName });
+            return Ok(data);
+        }
+
+        [Authorize]//(Roles = "Owner")]
+        [Route("Lead/{encodedName}/LeadCall")]
+        public async Task<IActionResult> DeleteLeadCall(string encodedName)
+        {
+            var command = new DeleteLeadCallCommand { LeadEncodedName = encodedName };
+            await _mediator.Send(command);
+            return Ok();
         }
     }
 }

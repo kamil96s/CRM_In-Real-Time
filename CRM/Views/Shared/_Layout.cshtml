@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CRM.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/toastr.js/toastr.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
                             <a class="nav-link text-dark @(controller == "CRM" && action == "Index" ? "active" : "")" asp-area="" asp-controller="CRM" asp-action="Index">Accounts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark @(controller == "Affiliation" && action == "Index" ? "active" : "")" asp-area="" asp-controller="Affiliation" asp-action="Index">Affiliation</a>
+                            <a class="nav-link text-dark @(controller == "MyCustomers" && action == "Index" ? "active" : "")" asp-area="" asp-controller="MyCustomers" asp-action="Index">My Customers</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -61,7 +62,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/toastr.js/toastr.min.js"></script>
+  @*   <script src="~/lib/Chart.js/chart.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
+  @*   <script src="~/js/Dashboard/Diagram.js" asp-append-version="true"></script> *@
+
     @if(notification != null)
     {
         <script>

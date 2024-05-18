@@ -1,5 +1,5 @@
 ﻿@using CRM.Application.Lead.Commands.Delete
-@using CRM.Application.CRMService.Commands;
+@using CRM.Application.LeadCall.Commands
 @model CRM.Application.Lead.Commands.Edit.EditLeadCommand
 
 @{
@@ -32,10 +32,21 @@
     </div>
 </div>
 
+<hr />
+<h3 style="margin-bottom: 20px;">Last call was</h3>
+
+<div id="calls" class="row" data-encoded-name="@Model.EncodedName"></div>
+
+<div style="margin: 10px 0;">
+    <partial name="_CreateLeadCall" model="new CreateLeadCallCommand() { LeadEncodedName = Model.EncodedName }" />
+    <partial name="_DeleteLeadCall" model="new DeleteLeadCallCommand() { LeadEncodedName = Model.EncodedName }" />
+</div>
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    <script src="~/js/CRM/Edit.js"></script>
-    <script src="~/js/CRM/DeleteService.js"></script>
+    <script src="~/js/lead.js"></script>
+    <script src="~/js/Lead/Edit.js"></script>
+    <script src="~/js/Lead/DeleteCall.js"></script>
 }

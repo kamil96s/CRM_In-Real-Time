@@ -22,6 +22,7 @@ namespace CRM.Domain.Entities
         public IdentityUser? CreatedBy {  get; set; }
 
         public string EncodedName { get; private set; } = default!;
+        public List<LeadCall> Calls { get; set; } = new();
 
         public string? DeletedById { get; set; }
         public IdentityUser? DeletedBy { get; set; }

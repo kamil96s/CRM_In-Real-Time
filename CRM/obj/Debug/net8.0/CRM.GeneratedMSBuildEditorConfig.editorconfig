@@ -30,10 +30,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gaslo/source/repos/CRM/CRM/Views/Affiliation/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZmaWxpYXRpb25cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/CRM/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,8 +86,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/_CreateLeadCall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxfQ3JlYXRlTGVhZENhbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/_Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxfRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/Lead/_DeleteLeadCall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxfRGVsZXRlTGVhZENhbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gaslo/source/repos/CRM/CRM/Views/MyCustomers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDdXN0b21lcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gaslo/source/repos/CRM/CRM/Views/Shared/Error.cshtml]

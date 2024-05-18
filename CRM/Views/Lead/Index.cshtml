@@ -13,7 +13,7 @@
 
 <div class="row">
  @{ int i = 0;
-    foreach (var item in Model)
+        foreach (var item in Model.Reverse())
     {
         <div class="card m-3" style="width: 50rem;">
             <div class="card-body">
@@ -52,14 +52,15 @@
                 @if (item.IsEditable)
                 {
                         <div class="row action-buttons">
-                            <div class="col-md-9 text-center">
+                            <div class="col-md-8 text-center">
                                 <a class="btn btn-outline-secondary" onclick="removeProgress(@item.Id)">Reverse</a>
                                 <a class="btn btn-outline-secondary" onclick="moveProgress(@item.Id)">Advance</a>
                             </div>
-                            <div class="col-md-3 text-right">
+                            <div class="col-md-4 text-right">
+                                <a class="btn btn-primary" asp-controller="Lead" asp-action="Info" asp-route-encodedName="@item.EncodedName">Info</a>
                                 <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
-                                <!-- <a class="btn btn-outline-dark" asp-controller="Lead" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a> Nie używamy już bo mamy partial delete -->
-                                <partial name="_Delete" model="new DeleteLeadCommand() { LeadEncodedName = @item.EncodedName }" />
+                                <a class="btn btn-outline-dark" asp-controller="Lead" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a>
+                                <!-- <partial name="_Delete" model="new DeleteLeadCommand() { LeadEncodedName = @item.EncodedName }" /> -->
                             </div>
                         </div>
                 }

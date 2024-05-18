@@ -1,7 +1,8 @@
-/*$(document).ready(function () {
+$(document).ready(function () {
 
+    LoadLeadCalls()
 
-    $('#deleteModal form').submit(function (event) {
+    $('#createLeadCallModal form').submit(function (event) {
         event.preventDefault();
 
         $.ajax({
@@ -9,11 +10,12 @@
             type: $(this).attr('method'),
             data: $(this).serialize(),
             success: function (data) {
-                toastr["info"]("Deleted customer profile")
+                toastr["success"]("Created new condition")
+                LoadLeadCalls()
             },
             error: function () {
                 toastr["error"]("Something went wrong")
             }
         });
     });
-});*/
+});

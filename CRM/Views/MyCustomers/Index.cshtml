@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CRM.Application.CRM.CRMDto>
+
+@{
+    ViewData["Title"] = "MyCustomers";
+}
+
+<br>
+
+<h4>Below - customers acquired by the currently logged in employee</h4>
+
+<br>
+
+<table class="table">
+    <thead class="custom-thead">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                Phone Number
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                TIN
+            </th>
+            <th>
+                Legal form
+            </th>
+            <th style ="font-weight: bold;">
+                Acquired by me
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Reverse())
+        {
+            @if (item.IsEditable)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Mail)</td>
+                    <td>@Html.DisplayFor(modelItem => item.About)</td>
+                    <td>@Html.DisplayFor(modelItem => item.LegalForm)</td>
+                    <td style="padding-left: 70px;">@Html.DisplayFor(modelItem => item.IsEditable)</td>
+                    <td style="padding: 10px;">
+                        <button type="button" class="btn btn-secondary btn-sm" style="height: 30px; padding: 0 10px;" onclick="location.href='/CRM/@item.EncodedName/Details'">Details</button>
+                    </td>
+                    @* <td>@Html.ActionLink("Details", "Details", new { encodedName = item.EncodedName })</td> *@
+                </tr>
+            }
+        }
+    </tbody>
+</table>

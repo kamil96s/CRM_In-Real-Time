@@ -134,6 +134,32 @@ namespace CRM.Infrastructure.Migrations
                     b.ToTable("Leads");
                 });
 
+            modelBuilder.Entity("CRM.Domain.Entities.LeadCall", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("EmployeeMail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastCallWas")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("LeadId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LeadId");
+
+                    b.ToTable("Calls");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -405,6 +431,17 @@ namespace CRM.Infrastructure.Migrations
                     b.Navigation("DeletedBy");
                 });
 
+            modelBuilder.Entity("CRM.Domain.Entities.LeadCall", b =>
+                {
+                    b.HasOne("CRM.Domain.Entities.Lead", "Lead")
+                        .WithMany("Calls")
+                        .HasForeignKey("LeadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lead");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -459,6 +496,11 @@ namespace CRM.Infrastructure.Migrations
             modelBuilder.Entity("CRM.Domain.Entities.CRM", b =>
                 {
                     b.Navigation("Services");
+                });
+
+            modelBuilder.Entity("CRM.Domain.Entities.Lead", b =>
+                {
+                    b.Navigation("Calls");
                 });
 #pragma warning restore 612, 618
         }

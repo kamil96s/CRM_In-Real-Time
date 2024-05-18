@@ -1,8 +1,73 @@
 ﻿@model IEnumerable<CRM.Application.CRM.CRMDto>
+
 @{
     ViewData["Title"] = "Dashboard";
 }
+<h2>Dashboard</h2>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM'">
+                <div class="card-body text-center">
+                    <p class="card-text">Number of all customers:</p>
+                    <p class="card-text font-weight-bold display-4">@ViewBag.TotalNameCount</p>
+                </div>
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM/@ViewBag.LastCreatedName/Details'">
+                <div class="card-body text-center">
+                    <p class="card-text">Last acquired customer:</p>
+                    <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedName</p>
+                </div>
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyCustomers'">
+                <div class="card-body text-center">
+                    <p class="card-text">Number of customers acquired by me:</p>
+                    <p class="card-text font-weight-bold display-4">@ViewBag.NameCount</p>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="nameCount" value="@ViewBag.NameCount" />
+<input type="hidden" id="totalNameCount" value="@ViewBag.TotalNameCount" />
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">ACQUIRED CUSTOMERS</h5>
+                    <canvas id="myPieChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
 
 <div class="text-center">
-    <h2>Every new day is a chance to develop relationships with customers!</h2>
+    <h4>Every new day is a chance to develop relationships with customers!</h4>
 </div>
+
+<div class="text-center">
+    <h2>KEEPS YOU GOING!</h2>
+</div>
+
+<br>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script src="~/js/Dashboard/Diagram.js" asp-append-version="true"></script>
+}

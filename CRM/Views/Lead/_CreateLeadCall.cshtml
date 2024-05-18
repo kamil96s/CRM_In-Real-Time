@@ -1,0 +1,46 @@
+﻿@model CRM.Application.LeadCall.Commands.CreateLeadCallCommand
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createLeadCallModal">
+    Add new record
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="createLeadCallModal" tabindex="-1" aria-labelledby="createLeadCallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="CreateLeadCall">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createLeadCallModalLabel">Add contact to department</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <input asp-for="LeadEncodedName" class="form-control" type="hidden" />
+
+                    <div class="form-group">
+                        <label asp-for="LastCallWas" class="control-label">Last call was</label>
+                        <input asp-for="LastCallWas" class="form-control" />
+                        <span asp-validation-for="LastCallWas" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="EmployeeMail" class="control-label">Employee E-mail</label>
+                        <input asp-for="EmployeeMail" class="form-control" />
+                        <span asp-validation-for="EmployeeMail" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

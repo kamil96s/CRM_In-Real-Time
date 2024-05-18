@@ -13,7 +13,7 @@
 </p>
 
 <div class="row">
-    @foreach (var item in Model)
+    @foreach (var item in Model.Reverse())
     {
         <div class="card m-3" style="width: 20rem;">
             <div class="card-body">
@@ -22,14 +22,14 @@
                 <p class="card-text">@item.Mail</p>
                 <div class="row action-buttons">
                     <div class="text-center">
-                <a class="btn btn-primary" asp-controller="CRM" asp-action="Details" asp-route-encodedName="@item.EncodedName">Details</a>
-                @if(item.IsEditable)
-                {
-                <a class="btn btn-outline-secondary" asp-controller="CRM" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
-                <partial name="_Delete" model="new DeleteCRMCommand() { CRMEncodedName = @item.EncodedName }" />
-                //<a class="btn btn-outline-dark" asp-controller="CRM" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a> Nie używamy już bo mamy partial delete
-                }
-                </div>
+                        <a class="btn btn-primary" asp-controller="CRM" asp-action="Details" asp-route-encodedName="@item.EncodedName">Details</a>
+                        @if (item.IsEditable)
+                        {
+                            <a class="btn btn-outline-secondary" asp-controller="CRM" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
+                            @* <partial name="_Delete" model="new DeleteCRMCommand() { CRMEncodedName = @item.EncodedName }" /> *@
+                            <a class="btn btn-outline-dark" asp-controller="CRM" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a> //Nie używamy już bo mamy partial delete
+                        }
+                    </div>
                 </div>
             </div>
         </div>

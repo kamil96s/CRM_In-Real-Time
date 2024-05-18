@@ -30,6 +30,7 @@ namespace CRM.Infrastructure.Extensions
             services.AddScoped<ICRMRepository, CRMRepository>();
             services.AddScoped<ILeadRepository, LeadRepository>();
             services.AddScoped<ICRMServiceRepository, CRMServiceRepository>();
+            services.AddScoped<ILeadCallRepository, LeadCallRepository>();
         }
     }
 }

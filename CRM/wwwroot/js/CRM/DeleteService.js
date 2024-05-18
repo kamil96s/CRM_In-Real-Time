@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     LoadCRMServices()
 
+
     $('#deleteCRMServiceModal form').submit(function (event) {
         event.preventDefault();
 
@@ -13,6 +14,7 @@ $(document).ready(function () {
                 toastr["info"]("Deleted all conditions")
                 LoadCRMServices()
             },
+
             error: function () {
                 toastr["error"]("Something went wrong")
             }

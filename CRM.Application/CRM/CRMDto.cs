@@ -19,8 +19,10 @@ namespace CRM.Application.CRM
         public string? Mail { get; set; }
         public string? About { get; set; }
         public string? LegalForm { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public string? EncodedName { get; set; }
         public bool IsEditable { get; set; }
         public bool IsDeleteable { get; set; }
+        
     }
 }

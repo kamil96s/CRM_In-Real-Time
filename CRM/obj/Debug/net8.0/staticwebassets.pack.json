@@ -197,12 +197,88 @@
       "PackagePath": "staticwebassets\\js\\CRM\\Edit.js"
     },
     {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Diagram.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Diagram.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\DeleteCall.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\DeleteCall.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Edit.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\Edit.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Info.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\Info.js"
+    },
+    {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Slider.js",
       "PackagePath": "staticwebassets\\js\\Lead\\Slider.js"
     },
     {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\lead.js",
+      "PackagePath": "staticwebassets\\js\\lead.js"
+    },
+    {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.js.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.umd.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.umd.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.umd.js.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.umd.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.umd.min.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.umd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.js.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.min.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\index.umd.d.ts",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\index.umd.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\types.d.ts",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\types.d.ts"
     },
     {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\LICENSE",

@@ -17,12 +17,12 @@ using CRM.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using System.Diagnostics;
 
-namespace Affiliation.Controllers
+namespace MyCustomers.Controllers
 {
-    public class AffiliationController : Controller
+    public class MyCustomersController : Controller
     {
         private readonly IMediator _mediator;
-        public AffiliationController(IMediator mediator)
+        public MyCustomersController(IMediator mediator)
         {
             _mediator = mediator;
         }
