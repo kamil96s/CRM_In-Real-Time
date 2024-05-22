@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[3.7.1, )"
             },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.1, )"

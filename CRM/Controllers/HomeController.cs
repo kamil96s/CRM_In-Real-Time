@@ -1,10 +1,11 @@
- using CRM.Models;
+using CRM.Models;
 using MediatR;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 using CRM.Application.CRM.Queries.GetAllCRMs;
 using System.Diagnostics;
 using CRM.Application.CRM;
+using CRM.Application.Lead.Queries.GetAllLeads;
 
 namespace CRM.Controllers
 {
@@ -23,18 +24,31 @@ namespace CRM.Controllers
         public async Task<IActionResult> Index()
         {
             var crms = await _mediator.Send(new GetAllCRMsQuery());
-            var viewModel = crms.Where(c => c.IsEditable).ToList(); // Filtruj rekordy wed³ug potrzeby
+            var leads = await _mediator.Send(new GetAllLeadsQuery());
+
+            var viewModel = new Leads_Accounts
+            {
+                CRMDash = crms,
+                LeadDash = leads
+            };
 
             int totalNameCount = crms.Count(c => !string.IsNullOrEmpty(c.Name));
-            int nameCount = viewModel.Count(c => !string.IsNullOrEmpty(c.Name)); // Liczba rekordów z w³aœciwoœci¹ Name
-
+            int nameCount = crms.Where(c => c.IsEditable).Count(c => !string.IsNullOrEmpty(c.Name));
             var lastCreatedRecord = crms.OrderByDescending(c => c.CreatedAt).FirstOrDefault();
+
+            int totalLeadCount = leads.Count(c => !string.IsNullOrEmpty(c.Name));
+            int leadCount = leads.Where(c => c.IsEditable).Count(c => !string.IsNullOrEmpty(c.Name));
+            var lastCreatedLead = leads.OrderByDescending(c => c.CreatedAt).FirstOrDefault();
 
             ViewBag.TotalNameCount = totalNameCount;
             ViewBag.NameCount = nameCount;
             ViewBag.LastCreatedName = lastCreatedRecord?.Name;
 
-            return View(crms);
+            ViewBag.TotalLeadCount = totalLeadCount;
+            ViewBag.LeadCount = leadCount;
+            ViewBag.LastCreatedLead = lastCreatedLead?.Name;
+
+            return View(viewModel);
         }
 
         public IActionResult NoAccess()

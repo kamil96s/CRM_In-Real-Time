@@ -18,6 +18,9 @@ namespace CRM.Application.LeadCall.Commands
             RuleFor(s => s.EmployeeMail).NotEmpty().NotNull()
                 .NotEmpty().WithMessage("This field 'Phone' cannot be empty");
 
+            RuleFor(s => s.AboutCall).NotEmpty().NotNull()
+                .NotEmpty().WithMessage("This field 'AboutCall' cannot be empty");
+
             RuleFor(s => s.LeadEncodedName).NotEmpty().NotNull();
         }
     }

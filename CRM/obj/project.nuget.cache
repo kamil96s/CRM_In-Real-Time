@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MzTE6OtSuMkrYVXHRE8g+EwbtA7onWZdSzVOkmGe7rBW0COiOZ8M19hm9hoYoRUEZsMTdpu4EHHhsyGqQOk5+Q==",
+  "dgSpecHash": "AWgxGmaYkmS09+jnBR75B7N87PLUUuSFytGg1DvxUurCFcOwhOcft9kuVjKRwQBB7plksbDLU3oFiZ5U64Iz+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\CRM.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\gaslo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\chart.js\\3.7.1\\chart.js.3.7.1.nupkg.sha512",
+    "C:\\Users\\gaslo\\.nuget\\packages\\chartjs\\23.1.10\\chartjs.23.1.10.nupkg.sha512",
+    "C:\\Users\\gaslo\\.nuget\\packages\\cldrjs\\0.4.4\\cldrjs.0.4.4.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
@@ -63,6 +65,8 @@
     "C:\\Users\\gaslo\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\gaslo\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512",
+    "C:\\Users\\gaslo\\.nuget\\packages\\jquery-globalize\\1.1.1\\jquery-globalize.1.1.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\gaslo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

@@ -7,6 +7,8 @@ const RenderLeadCalls = (calls, container) => {
                 <div class="card-header">${call.lastCallWas}</div>
                 <div class="card-body">
                     <h5 class="card-title">${call.employeeMail}</h5>
+                    <hr>
+                    <p class="card-text">${call.aboutCall}</p>
                 </div>
             </div>`)
     }

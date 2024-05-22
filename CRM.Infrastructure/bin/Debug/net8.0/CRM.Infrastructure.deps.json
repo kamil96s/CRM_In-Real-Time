@@ -10,6 +10,7 @@
         "dependencies": {
           "CRM.Application": "1.0.0",
           "Chart.js": "3.7.1",
+          "ChartJS": "23.1.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
           "Microsoft.AspNetCore.Identity.UI": "8.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
@@ -80,6 +81,13 @@
         }
       },
       "Chart.js/3.7.1": {},
+      "ChartJS/23.1.10": {
+        "dependencies": {
+          "jQuery": "3.5.1",
+          "jquery-globalize": "1.1.1"
+        }
+      },
+      "cldrjs/0.4.4": {},
       "FluentValidation/11.5.1": {
         "runtime": {
           "lib/net7.0/FluentValidation.dll": {
@@ -118,6 +126,12 @@
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
           }
+        }
+      },
+      "jQuery/3.5.1": {},
+      "jquery-globalize/1.1.1": {
+        "dependencies": {
+          "cldrjs": "0.4.4"
         }
       },
       "MediatR/11.0.0": {
@@ -1052,6 +1066,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "CRM.Domain": "1.0.0",
           "Chart.js": "3.7.1",
+          "ChartJS": "23.1.10",
           "FluentValidation.AspNetCore": "11.3.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
@@ -1064,6 +1079,7 @@
       "CRM.Domain/1.0.0": {
         "dependencies": {
           "Chart.js": "3.7.1",
+          "ChartJS": "23.1.10",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
           "Microsoft.Extensions.Identity.Stores": "8.0.3"
         },
@@ -1114,6 +1130,20 @@
       "path": "chart.js/3.7.1",
       "hashPath": "chart.js.3.7.1.nupkg.sha512"
     },
+    "ChartJS/23.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cmgFnuQJcvEto+tnskc4JbCToUwtHrNFlYeZB9mRaAZoYo8LAWQnnrBHpntdfVsZMhB5Rah7Q6BThbH55fgiEA==",
+      "path": "chartjs/23.1.10",
+      "hashPath": "chartjs.23.1.10.nupkg.sha512"
+    },
+    "cldrjs/0.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QTJ2r9FpA1XOFPRguhHAFjJZZJVil5TFOUCTLpN02BjQtgXgVDpt5VFyxQp/uNwEh0InNWLdIugl2Ls1IBqfXg==",
+      "path": "cldrjs/0.4.4",
+      "hashPath": "cldrjs.0.4.4.nupkg.sha512"
+    },
     "FluentValidation/11.5.1": {
       "type": "package",
       "serviceable": true,
@@ -1141,6 +1171,20 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "jQuery/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ji6sm/AI0vjASXAA/AG9Yf5ypALAqIDXFFKPHMAnFL8kp3xqULIWhACjg/OXZP88C56frYlIej2nrdBnhTMYQQ==",
+      "path": "jquery/3.5.1",
+      "hashPath": "jquery.3.5.1.nupkg.sha512"
+    },
+    "jquery-globalize/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkRqYLIONjwamztg1rG+xyh2asA0ARLOPorfF3N9JW8fWr+srtPAeUNLFHF6NZAQ7Avnkzgi2OC505lK5avFag==",
+      "path": "jquery-globalize/1.1.1",
+      "hashPath": "jquery-globalize.1.1.1.nupkg.sha512"
     },
     "MediatR/11.0.0": {
       "type": "package",

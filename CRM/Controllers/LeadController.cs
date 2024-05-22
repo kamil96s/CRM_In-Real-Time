@@ -36,18 +36,26 @@ namespace Lead.Controllers
         [Route("Lead/{encodedName}/Info")]
         public async Task<IActionResult> Info(string encodedName)
         {
-            var dto = await _mediator.Send(new GetLeadByEncodedNameQuery(encodedName));
-            return View(dto);
+            var singleLead = await _mediator.Send(new GetLeadByEncodedNameQuery(encodedName));
+            var leadList = await _mediator.Send(new GetAllLeadsQuery());
+
+            var sliderInfo = new CRM.Models.Slider_Info
+            {
+                Info = singleLead,
+                Slider = leadList
+            };
+            return View(sliderInfo);
         }
 
         [HttpPost]
         [Route("Lead/{leadId}/UpdateProgress")]
-        public async Task<IActionResult> UpdateProgress(int leadId, Slider progress)
+        public async Task<IActionResult> UpdateProgress([FromRoute] int leadId, [FromQuery] Slider progress)
         {
-            var lead = _context.Leads.Find(leadId);
+            var lead = _context.Leads.FirstOrDefault(q => q.Id == leadId);
             if (lead == null) return NotFound();
 
             lead.Progress = progress;
+            _context.Leads.Update(lead);
             await _context.SaveChangesAsync();
 
             return Ok();

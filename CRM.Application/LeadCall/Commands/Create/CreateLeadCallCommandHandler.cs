@@ -39,6 +39,7 @@ namespace CRM.Application.LeadCall.Commands
             {
                 LastCallWas = request.LastCallWas,
                 EmployeeMail = request.EmployeeMail,
+                AboutCall = request.AboutCall,
                 LeadId = lead.Id,
             };
 

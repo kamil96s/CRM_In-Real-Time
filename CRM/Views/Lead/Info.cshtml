@@ -1,44 +1,93 @@
-﻿@model CRM.Application.Lead.LeadDto
+﻿@model CRM.Models.Slider_Info
 
 @{
-    ViewData["Title"] = "Info";
+    ViewData["Title"] = "Info and Slider";
 }
 
-<h3>Info about potential customer - @Model.Name</h3>
+<h3>Info about potential customer - @Model.Info.Name</h3>
 
 <div>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info.Name)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info.PhoneNumber)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhoneNumber)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info.PhoneNumber)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Mail)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info.Mail)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Mail)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info.Mail)
         </dd>
     </dl>
 </div>
 
-<hr />
-<h3 style="margin-bottom: 20px;">When the last call was made and which employee made it?</h3>
+<div class="card mt-4 mb-4 m-3" style="width: 50rem;">
+    <div class="card-body">
+        <!-- Górna część -->
+        <div class="row">
+            <div class="col-5">
+                <h5 class="card-title">@Model.Info.Name</h5>
+            </div>
+            <div class="col-2">
+                <h6 class="card-subtitle mt-1">@Model.Info.PhoneNumber</h6>
+            </div>
+            <div class="col-5">
+                <p class="card-text">@Model.Info.Mail</p>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress-@Model.Info.Id" data-progress="@Model.Info.Progress" style="width: @Model.Info.Progress;"></div>
+            </div>
+            <span class="step">Contact Attempt/<br>Unsuccessful</span>
+            <span class="step">Successful Contact Attempt/<br>No Agreement</span>
+            <span class="step">Establishing<br>Cooperation</span>
+            <span class="step">No Action</span>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h5 class="card-title mt-4 mb-4"> </h5>
+            </div>
+        </div>
+        <div class="row action-buttons">
+            <div class="col-md-8 text-center">
+                @if (Model.Info.IsEditable)
+                {
+                    <a class="btn btn-outline-secondary" onclick="removeProgress(@Model.Info.Id)">Reverse</a>
+                    <a class="btn btn-outline-secondary" onclick="moveProgress(@Model.Info.Id)">Advance</a>
+                }
+            </div>
+            <div class="col-md-4 text-right">
+                <a class="btn btn-primary" asp-controller="Lead" asp-action="Info" asp-route-encodedName="@Model.Info.EncodedName">Info</a>
+                @if (Model.Info.IsEditable)
+                {
+                    <a class="btn btn-outline-secondary" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@Model.Info.EncodedName">Edit</a>
+                    <a class="btn btn-outline-dark" asp-controller="Lead" asp-action="Delete" asp-route-encodedName="@Model.Info.EncodedName">Delete</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
 
-<div id="calls" class="row" data-encoded-name="@Model.EncodedName"></div>
+
+<hr />
+<h3 style="margin-bottom: 20px;">When the last calls was made, by which employee and with what results?</h3>
+
+<div id="calls" class="row" data-encoded-name="@Model.Info.EncodedName"></div>
 
 <div>
-    @if (Model.IsEditable)
+    @if (Model.Info.IsEditable)
     {
-        <a class="btn btn-primary" style="margin-top: 20px;" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@Model.EncodedName">Edit</a>
+        <a class="btn btn-primary" style="margin-top: 20px;" asp-controller="Lead" asp-action="Edit" asp-route-encodedName="@Model.Info.EncodedName">Edit</a>
     }
     <a class="btn btn-secondary" style="margin-top: 20px;" asp-action="Index">Back to List</a>
 </div>
@@ -47,4 +96,5 @@
     <script src="~/js/lead.js"></script>
     <script src="~/js/Lead/Info.js"></script>
     <script src="~/js/Lead/DeleteCall.js"></script>
+    <script src="~/js/Lead/Slider.js"></script>
 }

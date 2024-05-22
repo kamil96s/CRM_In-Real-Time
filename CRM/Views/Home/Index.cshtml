@@ -1,8 +1,13 @@
-﻿@model IEnumerable<CRM.Application.CRM.CRMDto>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@model CRM.Models.Leads_Accounts
 
 @{
     ViewData["Title"] = "Dashboard";
 }
+
+@if (SignInManager.IsSignedIn(User))
+{
 <h2>Dashboard</h2>
 <br>
 
@@ -38,20 +43,64 @@
 <input type="hidden" id="nameCount" value="@ViewBag.NameCount" />
 <input type="hidden" id="totalNameCount" value="@ViewBag.TotalNameCount" />
 
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">ACQUIRED CUSTOMERS</h5>
-                    <canvas id="myPieChart"></canvas>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">ACQUIRED CUSTOMERS</h5>
+                        <canvas id="myPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">CREATED LEADS</h5>
+                        <canvas id="myPieChart2"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+<input type="hidden" id="leadCount" value="@ViewBag.LeadCount" />
+<input type="hidden" id="totalLeadCount" value="@ViewBag.TotalLeadCount" />
 
 <br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead'">
+                <div class="card-body text-center">
+                    <p class="card-text">Number of all leads:</p>
+                    <p class="card-text font-weight-bold display-4">@ViewBag.TotalLeadCount</p>
+                </div>
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead/@ViewBag.LastCreatedLead/Info'">
+                <div class="card-body text-center">
+                    <p class="card-text">Last insert lead:</p>
+                    <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedLead</p>
+                </div>
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyOpportunities'">
+                <div class="card-body text-center">
+                    <p class="card-text">Number of leads coordinated by me:</p>
+                    <p class="card-text font-weight-bold display-4">@ViewBag.LeadCount</p>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<br>
+}
 <br>
 
 <div class="text-center">
@@ -59,7 +108,7 @@
 </div>
 
 <div class="text-center">
-    <h2>KEEPS YOU GOING!</h2>
+    <h2>IMPOSSIBLE THINGS DO NOT EXIST!</h2>
 </div>
 
 <br>
@@ -68,6 +117,7 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-
+    <script src="~/js/Dashboard/Speed.js" asp-append-version="true"></script>
     <script src="~/js/Dashboard/Diagram.js" asp-append-version="true"></script>
+    
 }

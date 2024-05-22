@@ -201,6 +201,10 @@
       "PackagePath": "staticwebassets\\js\\Dashboard\\Diagram.js"
     },
     {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Speed.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Speed.js"
+    },
+    {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\DeleteCall.js",
       "PackagePath": "staticwebassets\\js\\Lead\\DeleteCall.js"
     },

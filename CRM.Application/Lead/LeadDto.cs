@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRM.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,11 +12,14 @@ namespace CRM.Application.Lead
     {
         public string Name { get; set; } = default!;
         public string? Id { get; set; }
+        public Slider Progress { get; set; }
         public string? PhoneNumber { get; set; }
         [Required(ErrorMessage = "Please enter e-mail address")]
         [EmailAddress(ErrorMessage = "This e-mail address is not valid")]
         public string? Mail { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public string? EncodedName { get; set; }
+        
         public bool IsEditable { get; set; }
         public bool IsDeleteable { get; set; }
     }

@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[3.7.1, )"
             },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
@@ -139,6 +143,10 @@
               "target": "Package",
               "version": "[3.7.1, )"
             },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -216,6 +224,10 @@
             "Chart.js": {
               "target": "Package",
               "version": "[3.7.1, )"
+            },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -319,6 +331,10 @@
             "Chart.js": {
               "target": "Package",
               "version": "[3.7.1, )"
+            },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
             },
             "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
               "target": "Package",

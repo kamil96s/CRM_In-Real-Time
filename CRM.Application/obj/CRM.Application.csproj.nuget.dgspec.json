@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[3.7.1, )"
             },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
@@ -138,6 +142,10 @@
             "Chart.js": {
               "target": "Package",
               "version": "[3.7.1, )"
+            },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.10, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
