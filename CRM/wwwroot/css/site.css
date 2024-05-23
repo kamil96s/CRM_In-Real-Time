@@ -27,6 +27,35 @@ body {
   margin-bottom: 60px;
 }
 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure all cards take up 100% height */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    flex-grow: 1; /* Allow the chart to grow and fill the card body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myPieChart3 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
 .card-body {
     padding: 20px; /* Zapewnia wiêcej przestrzeni wewn¹trz ka¿dej karty */
 }

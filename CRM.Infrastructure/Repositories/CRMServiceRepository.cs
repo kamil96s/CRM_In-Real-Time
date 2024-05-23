@@ -13,7 +13,7 @@ namespace CRM.Infrastructure.Repositories
     public class CRMServiceRepository : ICRMServiceRepository
     {
         private readonly CRMDbContext _dbContext;
-        public CRMServiceRepository(CRMDbContext dbContext) 
+        public CRMServiceRepository(CRMDbContext dbContext)
         {
             _dbContext = dbContext;
         }

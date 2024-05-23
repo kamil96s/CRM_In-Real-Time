@@ -201,6 +201,10 @@
       "PackagePath": "staticwebassets\\js\\Dashboard\\Diagram.js"
     },
     {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Indicator.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Indicator.js"
+    },
+    {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Speed.js",
       "PackagePath": "staticwebassets\\js\\Dashboard\\Speed.js"
     },
@@ -463,6 +467,138 @@
     {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\README.md",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\arrow.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\arrow.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\bg.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\browsers.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\browsers.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\cross.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\cross.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\crosshair.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\crosshair.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\excanvas.compiled.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\excanvas.compiled.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider-tooltip.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider-tooltip.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\github.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\github.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\hs.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\hs.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\hv.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\hv.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\jscolor.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\jscolor.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\main.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\prettify.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\prettify.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\prettify.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\prettify.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\preview.jpg",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\ribbon.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\ribbon.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\strike.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\strike.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.coffee",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.coffee"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.js.map",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.min.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\favicon.ico",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\index.html",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\package-lock.json",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\package-lock.json"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\package.json",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.min.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.min.js"
     },
     {
       "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

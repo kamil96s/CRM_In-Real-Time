@@ -10,7 +10,7 @@ $(document).ready(function () {
             type: $(this).attr('method'),
             data: $(this).serialize(),
             success: function (data) {
-                toastr["info"]("Deleted all conditions")
+                toastr["info"]("All notes deleted")
                 LoadLeadCalls()
             },
             error: function () {

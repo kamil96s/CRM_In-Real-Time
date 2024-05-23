@@ -18,6 +18,10 @@ namespace CRM.Infrastructure.Repositories
         {
             _dbContext = dbContext;
         }
+        public async Task<int> GetPoz3LeadsCountAsync(CancellationToken cancellationToken)
+        {
+            return await _dbContext.Leads.CountAsync(l => l.Progress == Slider.Poz3, cancellationToken);
+        }
 
         public IEnumerable<object> leads => throw new NotImplementedException();
 

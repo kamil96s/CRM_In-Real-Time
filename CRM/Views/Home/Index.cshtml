@@ -11,92 +11,106 @@
 <h2>Dashboard</h2>
 <br>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM'">
-                <div class="card-body text-center">
-                    <p class="card-text">Number of all customers:</p>
-                    <p class="card-text font-weight-bold display-4">@ViewBag.TotalNameCount</p>
-                </div>
-            </button>
-        </div>
-        <div class="col-md-4">
-            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM/@ViewBag.LastCreatedName/Details'">
-                <div class="card-body text-center">
-                    <p class="card-text">Last acquired customer:</p>
-                    <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedName</p>
-                </div>
-            </button>
-        </div>
-        <div class="col-md-4">
-            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyCustomers'">
-                <div class="card-body text-center">
-                    <p class="card-text">Number of customers acquired by me:</p>
-                    <p class="card-text font-weight-bold display-4">@ViewBag.NameCount</p>
-                </div>
-            </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead'">
+                    <div class="card-body text-center">
+                        <p class="card-text">Number of all leads:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.TotalLeadCount</p>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead/@ViewBag.LastCreatedLead/Info'">
+                    <div class="card-body text-center">
+                        <p class="card-text">Last insert lead:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedLead</p>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyOpportunities'">
+                    <div class="card-body text-center">
+                        <p class="card-text">Number of leads coordinated by me:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.LeadCount</p>
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
-</div>
+
+
 
 <input type="hidden" id="nameCount" value="@ViewBag.NameCount" />
 <input type="hidden" id="totalNameCount" value="@ViewBag.TotalNameCount" />
 
     <div class="container mt-4">
-        <div class="row justify-content-center">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">ACQUIRED CUSTOMERS</h5>
-                        <canvas id="myPieChart"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
+        <div class="row justify-content-center d-flex align-items-stretch">
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card h-100 w-100">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-center">CREATED LEADS</h5>
                         <canvas id="myPieChart2"></canvas>
                     </div>
                 </div>
             </div>
+            <div class="col-md-5 d-flex align-items-stretch">
+                <div class="card h-100 w-100">
+                    <div class="card-body position-relative d-flex flex-column">
+                        <h5 class="card-title text-center">LEADS COMPLETED WITH AGREEMENT</h5>
+                        <div class="chart-container" style="position: relative; width: 100%; flex-grow: 1;">
+                            <canvas id="myPieChart3"></canvas>
+                        </div>
+                        <div id="percentage" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 10px; font-size: 18px; font-weight: bold;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card h-100 w-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">ACQUIRED CUSTOMERS</h5>
+                        <canvas id="myPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
 <input type="hidden" id="leadCount" value="@ViewBag.LeadCount" />
 <input type="hidden" id="totalLeadCount" value="@ViewBag.TotalLeadCount" />
 
 <br>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead'">
-                <div class="card-body text-center">
-                    <p class="card-text">Number of all leads:</p>
-                    <p class="card-text font-weight-bold display-4">@ViewBag.TotalLeadCount</p>
-                </div>
-            </button>
-        </div>
-        <div class="col-md-4">
-            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead/@ViewBag.LastCreatedLead/Info'">
-                <div class="card-body text-center">
-                    <p class="card-text">Last insert lead:</p>
-                    <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedLead</p>
-                </div>
-            </button>
-        </div>
-        <div class="col-md-4">
-            <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyOpportunities'">
-                <div class="card-body text-center">
-                    <p class="card-text">Number of leads coordinated by me:</p>
-                    <p class="card-text font-weight-bold display-4">@ViewBag.LeadCount</p>
-                </div>
-            </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM'">
+                    <div class="card-body text-center">
+                        <p class="card-text">Number of all customers:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.TotalNameCount</p>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM/@ViewBag.LastCreatedName/Details'">
+                    <div class="card-body text-center">
+                        <p class="card-text">Last acquired customer:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedName</p>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyCustomers'">
+                    <div class="card-body text-center">
+                        <p class="card-text">Number of customers acquired by me:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.NameCount</p>
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
-</div>
 
 
 <br>
@@ -119,5 +133,6 @@
     }
     <script src="~/js/Dashboard/Speed.js" asp-append-version="true"></script>
     <script src="~/js/Dashboard/Diagram.js" asp-append-version="true"></script>
+    <script src="~/js/Dashboard/Indicator.js" asp-append-version="true"></script>
     
 }

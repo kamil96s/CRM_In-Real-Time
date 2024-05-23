@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using CRM.Domain.Entities;
 using CRM.Infrastructure.Persistence;
+using CRM.Application.Lead.Queries.GetPoz3LeadsCount;
 
 namespace Lead.Controllers
 {
@@ -31,6 +32,14 @@ namespace Lead.Controllers
         {
             var leads = await _mediator.Send(new GetAllLeadsQuery());
             return View(leads);
+        }
+
+        [HttpGet]
+        [Route("Lead/Poz3Count")]
+        public async Task<IActionResult> GetPoz3LeadsCount()
+        {
+            var count = await _mediator.Send(new GetPoz3LeadsCountQuery());
+            return Ok(count);
         }
 
         [Route("Lead/{encodedName}/Info")]

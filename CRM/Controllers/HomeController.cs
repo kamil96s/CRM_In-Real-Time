@@ -6,6 +6,7 @@ using CRM.Application.CRM.Queries.GetAllCRMs;
 using System.Diagnostics;
 using CRM.Application.CRM;
 using CRM.Application.Lead.Queries.GetAllLeads;
+using CRM.Application.Lead.Queries.GetPoz3LeadsCount;
 
 namespace CRM.Controllers
 {
@@ -65,6 +66,8 @@ namespace CRM.Controllers
         {
             return View();
         }
+
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
