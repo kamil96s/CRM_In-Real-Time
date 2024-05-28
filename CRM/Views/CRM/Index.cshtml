@@ -15,7 +15,7 @@
 <div class="row">
     @foreach (var item in Model.Reverse())
     {
-        <div class="card m-3" style="width: 20rem;">
+        <div class="card m-3" style="width: 22rem;">
             <div class="card-body">
                 <h5 class="card-title">@item.Name</h5>
                 <h6 class="card-subtitle mb-2 text-muted">@item.PhoneNumber</h6>
@@ -26,8 +26,7 @@
                         @if (item.IsEditable)
                         {
                             <a class="btn btn-outline-secondary" asp-controller="CRM" asp-action="Edit" asp-route-encodedName="@item.EncodedName">Edit</a>
-                            @* <partial name="_Delete" model="new DeleteCRMCommand() { CRMEncodedName = @item.EncodedName }" /> *@
-                            <a class="btn btn-outline-dark" asp-controller="CRM" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a> //Nie używamy już bo mamy partial delete
+                            <a class="btn btn-outline-dark" asp-controller="CRM" asp-action="Delete" asp-route-encodedName="@item.EncodedName">Delete</a>
                         }
                     </div>
                 </div>
@@ -36,10 +35,3 @@
     }
 
 </div>
-
-@* @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-    <script src="~/js/CRM/Delete.js"></script>
-} *@

@@ -61,7 +61,7 @@ namespace CRM.Infrastructure.Repositories
         public async Task Remove(Lead lead)
         {
             _dbContext.Remove(lead);
-            await _dbContext.SaveChangesAsync(); //implementacja metody remove
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

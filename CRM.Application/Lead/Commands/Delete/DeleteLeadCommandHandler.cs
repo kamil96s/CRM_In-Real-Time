@@ -21,13 +21,13 @@ namespace CRM.Application.Lead.Commands.Delete
         }
         public async Task<Unit> Handle(DeleteLeadCommand request, CancellationToken cancellationToken)
         {
-            var lead = await _repository.GetByEncodedName(request.LeadEncodedName); //pobranie danego wpisu za pomocą encodedName
+            var lead = await _repository.GetByEncodedName(request.LeadEncodedName);
 
 
             await _repository.Remove(lead);
 
-            var user = _userContext.GetCurrentUser();                                                         //sprawdzenie czy użytkownik
-                                                                                                              // var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
+            var user = _userContext.GetCurrentUser();                                                            //sprawdzenie czy użytkownik
+            // var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
 
 
             // if (!isDeleteable)

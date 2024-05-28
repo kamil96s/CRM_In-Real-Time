@@ -14,14 +14,13 @@ namespace CRM.Infrastructure.Persistence
         public DbSet<CRM.Domain.Entities.Lead> Leads { get; set; }
         public DbSet<CRM.Domain.Entities.CRMService> Services { get; set; }
         public DbSet<CRM.Domain.Entities.LeadCall> Calls { get; set; }
-        //public DbSet<CRM.Domain.Entities.Opportunities> Opportunity { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Domain.Entities.CRM>()
-                .OwnsOne(c => c.ContactDetails);    //wskazujemy, że nasz CRM ma jedną właściwość ContactDetails
+                .OwnsOne(c => c.ContactDetails);
 
             modelBuilder.Entity<Domain.Entities.CRM>()
                 .HasMany(c => c.Services)

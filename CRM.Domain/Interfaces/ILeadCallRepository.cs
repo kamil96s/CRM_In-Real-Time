@@ -15,6 +15,6 @@ namespace CRM.Domain.Interfaces
         Task Delete(LeadCall Id);
         Task Delete(int Id);
         Task<IEnumerable<LeadCall>> GetAllByEncodedName(string encodedName);
-        Task Remove(IEnumerable<LeadCall> calls); // DODANE DODATKOWO
+        Task Remove(IEnumerable<LeadCall> calls);
     }
 }

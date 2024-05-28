@@ -18,7 +18,7 @@ namespace CRM.Domain.Interfaces
         Task<Domain.Entities.Lead> GetByEncodedName(string encodedName);
         Task<int> GetPoz3LeadsCountAsync(CancellationToken cancellationToken);
         Task Commit();
-        Task Remove(IEnumerable<Domain.Entities.Lead> leads); // DODANE DODATKOWO
-        Task Remove(Lead lead); //
+        Task Remove(IEnumerable<Domain.Entities.Lead> leads);
+        Task Remove(Lead lead);
     }
 }

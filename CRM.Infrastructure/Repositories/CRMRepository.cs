@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CRM.Infrastructure.Repositories
 {
-    internal class CRMRepository : ICRMRepository
+    public class CRMRepository : ICRMRepository
     {
         private readonly CRMDbContext _dbContext;
 
@@ -44,6 +44,7 @@ namespace CRM.Infrastructure.Repositories
         public async Task<IEnumerable<Domain.Entities.CRM>> GetAll()
             => await _dbContext.CRMs.ToListAsync();
 
+
         public async Task<Domain.Entities.CRM> GetByEncodedName(string encodedName)
         => await _dbContext.CRMs.FirstAsync(c => c.EncodedName == encodedName);
 
@@ -60,5 +61,13 @@ namespace CRM.Infrastructure.Repositories
             _dbContext.Remove(crm);
             await _dbContext.SaveChangesAsync();
         }
+        public async Task<IEnumerable<string>> GetAllEmails()
+        {
+            var crms = await _dbContext.CRMs.Where(c => c.Mail != null).ToListAsync();
+            return crms.Select(c => c.Mail!).ToList(); // Upewnij się, że Mail nie jest null
+        }
+
+
+
     }
 }

@@ -46,6 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark @(controller == "CRM" && action == "Index" ? "active" : "")" asp-area="" asp-controller="CRM" asp-action="Index">Accounts</a>
                         </li>
+@*                         <li class="nav-item">
+                                <a class="nav-link text-dark @(controller == "Campaign" && action == "Index" ? "active" : "")" asp-area="" asp-controller="Campaign" asp-action="Index">Campaign</a>
+                        </li> *@
                         <li class="nav-item">
                             <a class="nav-link text-dark @(controller == "MyOpportunities" && action == "Index" ? "active" : "")" asp-area="" asp-controller="MyOpportunities" asp-action="Index">My Opportunities</a>
                         </li>
@@ -79,9 +82,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/toastr.js/toastr.min.js"></script>
-  @*   <script src="~/lib/Chart.js/chart.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
-  @*   <script src="~/js/Dashboard/Diagram.js" asp-append-version="true"></script> *@
 
     @if(notification != null)
     {

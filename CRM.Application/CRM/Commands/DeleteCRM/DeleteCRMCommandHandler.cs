@@ -23,25 +23,12 @@ namespace CRM.Application.CRM.Commands.DeleteCRM
         }
         public async Task<Unit> Handle(DeleteCRMCommand request, CancellationToken cancellationToken)
         {
-            var crm = await _repository.GetByEncodedName(request.CRMEncodedName!); //pobranie danego wpisu za pomocą encodedName
+            var crm = await _repository.GetByEncodedName(request.CRMEncodedName!);
 
             await _repository.Remove(crm);
 
-            var user = _userContext.GetCurrentUser();                                                         //sprawdzenie czy użytkownik
-                                                                                                          // var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
-
-
-            // if (!isDeleteable)
-            // {
-            //    return Unit.Value;
-            // }
-
-            // var crmService = new Domain.Entities.CRMService()
-            //{
-
-            //};
-            // Wywołanie istniejącej metody w repozytorium do usunięcia usług
-            // await _crmServiceRepository.Delete(crmService);
+            var user = _userContext.GetCurrentUser();                                                            //sprawdzenie czy użytkownik
+            // var isDeleteable = user != null && (crm.CreatedById == user.Id || user.IsInRole("Moderator"));    //jest twórcą czy moderatorem
 
             return Unit.Value;
         }

@@ -1,0 +1,685 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\CRM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CRM.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\CRM\\Details.js",
+      "PackagePath": "staticwebassets\\js\\CRM\\Details.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\CRM\\Edit.js",
+      "PackagePath": "staticwebassets\\js\\CRM\\Edit.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Diagram.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Diagram.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Indicator.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Indicator.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Dashboard\\Speed.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard\\Speed.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\DeleteCall.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\DeleteCall.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Edit.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\Edit.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Info.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\Info.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\Lead\\Slider.js",
+      "PackagePath": "staticwebassets\\js\\Lead\\Slider.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\lead.js",
+      "PackagePath": "staticwebassets\\js\\lead.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.js.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.umd.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.umd.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.umd.js.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.umd.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\chart.umd.min.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\chart.umd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.js.map",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\helpers.min.js",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\helpers.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\index.umd.d.ts",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\index.umd.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\Chart.js\\types.d.ts",
+      "PackagePath": "staticwebassets\\lib\\Chart.js\\types.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\README.md",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\arrow.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\arrow.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\bg.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\browsers.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\browsers.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\cross.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\cross.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\crosshair.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\crosshair.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\excanvas.compiled.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\excanvas.compiled.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider-tooltip.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider-tooltip.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\fd-slider\\fd-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\github.gif",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\github.gif"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\hs.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\hs.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\hv.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\hv.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\jscolor.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\jscolor.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\main.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\prettify.css",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\prettify.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\prettify.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\prettify.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\preview.jpg",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\ribbon.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\ribbon.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\assets\\strike.png",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\assets\\strike.png"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.coffee",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.coffee"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.js.map",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\dist\\gauge.min.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\dist\\gauge.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\favicon.ico",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\index.html",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\package-lock.json",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\package-lock.json"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.js-gh-pages\\package.json",
+      "PackagePath": "staticwebassets\\lib\\gauge.js-gh-pages\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\gauge.min.js",
+      "PackagePath": "staticwebassets\\lib\\gauge.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\toastr.js\\toastr.css",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\toastr.js\\toastr.js.map",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\toastr.js\\toastr.min.css",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gaslo\\source\\repos\\CRM\\CRM\\wwwroot\\lib\\toastr.js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.CRM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.CRM.props",
+      "PackagePath": "build\\CRM.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CRM.props",
+      "PackagePath": "buildMultiTargeting\\CRM.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.CRM.props",
+      "PackagePath": "buildTransitive\\CRM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

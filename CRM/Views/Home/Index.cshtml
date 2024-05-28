@@ -24,16 +24,16 @@
             <div class="col-md-4">
                 <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/Lead/@ViewBag.LastCreatedLead/Info'">
                     <div class="card-body text-center">
-                        <p class="card-text">Last insert lead:</p>
+                        <p class="card-text">Last added lead:</p>
                         <p class="card-text font-weight-bold display-4">@ViewBag.LastCreatedLead</p>
                     </div>
                 </button>
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyOpportunities'">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM'">
                     <div class="card-body text-center">
-                        <p class="card-text">Number of leads coordinated by me:</p>
-                        <p class="card-text font-weight-bold display-4">@ViewBag.LeadCount</p>
+                        <p class="card-text">Number of all customers:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.TotalNameCount</p>
                     </div>
                 </button>
             </div>
@@ -58,7 +58,7 @@
             <div class="col-md-5 d-flex align-items-stretch">
                 <div class="card h-100 w-100">
                     <div class="card-body position-relative d-flex flex-column">
-                        <h5 class="card-title text-center">LEADS COMPLETED WITH AGREEMENT</h5>
+                        <h5 class="card-title text-center">COMPLETED LEADS -> COLLABORATION</h5>
                         <div class="chart-container" style="position: relative; width: 100%; flex-grow: 1;">
                             <canvas id="myPieChart3"></canvas>
                         </div>
@@ -86,10 +86,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/CRM'">
+                <button type="button" class="btn btn-outline-dark w-100" onclick="location.href='/MyOpportunities'">
                     <div class="card-body text-center">
-                        <p class="card-text">Number of all customers:</p>
-                        <p class="card-text font-weight-bold display-4">@ViewBag.TotalNameCount</p>
+                        <p class="card-text">Number of leads coordinated by me:</p>
+                        <p class="card-text font-weight-bold display-4">@ViewBag.LeadCount</p>
                     </div>
                 </button>
             </div>
